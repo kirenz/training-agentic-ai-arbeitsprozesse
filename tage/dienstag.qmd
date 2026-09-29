@@ -3,7 +3,7 @@ title: "Dienstag: Briefing und Prozessmodell"
 toc: true
 ---
 
-[29. September 2026 · 09:00–17:00 Uhr · Briefing durch Mercedes-Benz am Vormittag]{.kicker}
+[29. September 2026 · 09:00–17:00 Uhr · Raum I120 · Briefing durch Mercedes-Benz am Vormittag]{.kicker}
 
 ::: {.lead}
 - Briefing durch Mercedes-Benz mit Rückfragen

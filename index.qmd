@@ -14,7 +14,7 @@ Ein Agent, der Preislisten und Car Policy kennt, soll Mitarbeitende bei der Zusa
 | | |
 |---|---|
 | **Projektpartner** | Mercedes-Benz |
-| **Blocktage** | 28. September bis 1. Oktober 2026, jeweils 09:00 bis 17:00 Uhr |
+| **Blocktage** | 28. September bis 1. Oktober 2026, jeweils 09:00 bis 17:00 Uhr, Raum I120 |
 | **Wöchentlicher Termin** | Dienstag, 11:45 bis 13:15 Uhr |
 | **Umfang** | 5 SWS, kombinierte Modulprüfung mit Vorprüfungsleistung |
 | **Betreuung** | [Prof. Dr. Jan Kirenz](https://hdm-stuttgart.de/person/kirenz/) |

@@ -18,7 +18,7 @@ toc: true
 
 ## Ablauf
 
-- **Blocktage (28.09. bis 01.10.2026):** Einführung, Briefing, Prozessmodell, erste Prototypen
+- **Blocktage (28.09. bis 01.10.2026, Raum I120):** Einführung, Briefing, Prozessmodell, erste Prototypen
 - **Wöchentlicher Termin (Dienstag, 11:45 bis 13:15 Uhr):** Coaching, Reviews und Abstimmung mit Mercedes-Benz
 - **Semesterende:** Präsentation der Prototypen und Evaluationsergebnisse beim Projektpartner
 

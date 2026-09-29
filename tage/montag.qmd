@@ -3,7 +3,7 @@ title: "Montag: Projektstart und Einrichtung"
 toc: true
 ---
 
-[28. September 2026 · 09:00–17:00 Uhr]{.kicker}
+[28. September 2026 · 09:00–17:00 Uhr · Raum I120]{.kicker}
 
 ::: {.lead}
 - Projektstart: Ziel, Ablauf im Semester, Prüfungsleistung
