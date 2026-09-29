@@ -1,0 +1,71 @@
+---
+title: "Dienstag: Briefing und Prozessmodell"
+toc: true
+---
+
+[29. September 2026 · 09:00–17:00 Uhr · Briefing durch Mercedes-Benz am Vormittag]{.kicker}
+
+::: {.lead}
+- Briefing durch Mercedes-Benz mit Rückfragen
+- In den Gruppen: die Aufgabe noch einmal besprechen
+- In den Gruppen: den Ablauf heute und mit Agent als Prozessmodell skizzieren
+- Kurze Vorstellung: ein Modell, eine offene Frage pro Gruppe
+:::
+
+## Tagesergebnis
+
+Jede Gruppe hat die Aufgabe in eigenen Worten formuliert, offene Fragen an Mercedes-Benz gesammelt und einen ersten Entwurf des Prozessmodells erstellt: wie die Zusammenstellung einer Fahrzeugausstattung heute abläuft und wie sie mit einem Agenten ablaufen könnte.
+
+## Briefing durch Mercedes-Benz {#briefing}
+
+Mercedes-Benz stellt den Anwendungsfall vor: Preislisten für ausgewählte Baureihen, Sonderausstattungscodes, dokumentierte Abhängigkeiten und die Car Policy mit verpflichtenden Ausstattungen je Modelltyp. Während des Briefings hilft es, getrennt mitzuschreiben, was tatsächlich gesagt wird und was unklar bleibt.
+
+Die Unterlagen aus dem Briefing fallen unter die Vertraulichkeitsvereinbarung und werden nicht auf dieser Website abgelegt.
+
+## Übung 2.1: Die Aufgabe in der Gruppe besprechen {#uebung-2-1}
+
+::: {.uebung}
+### Etwa 30 Minuten · in den Gruppen
+
+1. Die Notizen aus dem Briefing zusammenlegen. Was soll der Agent leisten, für wen und auf Grundlage welcher Unterlagen?
+2. Trennen: Was hat Mercedes-Benz gesagt, was vermutet die Gruppe? Vermutungen als solche markieren.
+3. Die Aufgabe in drei bis fünf Sätzen in eigenen Worten aufschreiben, etwa: „Mitarbeitende wollen für Baureihe X eine Ausstattung zusammenstellen, die der Car Policy entspricht. Der Agent schlägt Schritt für Schritt Ausstattungen vor und nennt dazu Code, Preis und Fundstelle in der Preisliste.“
+4. Offene Fragen an Mercedes-Benz sammeln und je Frage notieren, wofür die Antwort gebraucht wird (zum Beispiel: Wie oft ändern sich die Preislisten? Wichtig für den Prozess zum Einspielen neuer Listen).
+5. Einen ersten Prüffall festhalten: eine konkrete Anfrage und die Antwort, die fachlich richtig wäre.
+
+**Ergebnis:** Aufgabenbeschreibung, Liste offener Fragen und ein erster Prüffall in der Teamablage.
+:::
+
+## Übung 2.2: Den Ablauf als Prozessmodell skizzieren {#uebung-2-2}
+
+::: {.uebung}
+### Etwa 90 Minuten · in den Gruppen
+
+**Material:** [Werkzeugkasten Prozessmodellierung](../werkzeuge/prozessmodell.qmd) mit Symbolen und Beispiel, [draw.io](https://app.diagrams.net/){target="_blank"} (Formenbibliothek „BPMN 2.0“) oder [demo.bpmn.io](https://demo.bpmn.io/){target="_blank"}.
+
+**Teil 1: Der Ablauf heute.** Wie stellen Mitarbeitende laut Briefing heute eine Fahrzeugausstattung zusammen?
+
+1. Die Beteiligten als Bahnen anlegen, zum Beispiel Mitarbeitende, Fachbereich, Unterlagen (Preisliste, Car Policy).
+2. Die Schritte von der Anfrage bis zur fertigen Zusammenstellung eintragen: Baureihe wählen, Ausstattung in der Preisliste nachschlagen, Pflichtausstattung laut Car Policy prüfen, Abhängigkeiten zwischen Codes prüfen, Preis ermitteln.
+3. Entscheidungen als Raute mit beschrifteten Pfeilen darstellen (zum Beispiel: Ausstattung zulässig? ja, nein).
+4. Stellen markieren, an denen heute Zeit verloren geht oder Fehler entstehen.
+
+**Teil 2: Der Ablauf mit Agent.** Dasselbe Ziel, jetzt mit den Bahnen Mitarbeitende, KI-Agent und Workflow-System.
+
+1. Festlegen, was eine **feste Regel** ist und ohne Modell geprüft werden kann, etwa die Pflichtausstattung laut Car Policy oder die Abhängigkeit zwischen zwei Codes. Diese Schritte liegen im Workflow-System.
+2. Festlegen, wo ein **Modellschritt** nötig ist, etwa eine frei formulierte Anfrage verstehen oder einen Vorschlag mit Quellenangabe formulieren. Diese Schritte liegen beim KI-Agenten.
+3. Die **menschliche Prüfung** als eigenen Schritt bei den Mitarbeitenden einzeichnen: Wer gibt den Vorschlag frei?
+4. Das **Einspielen neuer Preislisten** als eigenen kleinen Ablauf ergänzen: Wer liefert die neue Liste, was wird eingelesen, was geprüft?
+
+**Teil 3: Abgleich.** Mit Farbe oder Kommentar kennzeichnen, welche Schritte aus dem Briefing stammen und welche die Gruppe vorschlägt. Was unklar ist, wandert in die Liste offener Fragen aus Übung 2.1.
+
+**Prüfung:** Liegt jeder Schritt in genau einer Bahn? Steht jede feste Regel vor dem Modellschritt, der sich auf sie verlässt? Bleibt die Freigabe beim Menschen? Lässt sich jeder Vorschlag auf eine Quelle zurückführen?
+
+**Ergebnis:** Beide Modelle als bearbeitbare Datei (`.drawio` oder `.bpmn`) und als PNG in der Teamablage, dazu die ergänzte Liste offener Fragen.
+:::
+
+## Vorstellung und offene Fragen {#abschluss}
+
+Jede Gruppe zeigt kurz ihr Modell mit Agent, erklärt eine feste Regel und einen Modellschritt und nennt die wichtigste offene Frage an Mercedes-Benz. Keine Folien. Die Fragen werden gesammelt und gebündelt an Mercedes-Benz weitergegeben.
+
+[**Zurück zum Montag**](montag.qmd)

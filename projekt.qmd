@@ -1,0 +1,56 @@
+---
+title: "Semesterprojekt"
+toc: true
+---
+
+[Im Semester entsteht ein Prototyp, der Preislisten und Car Policy einliest, abfragbar macht und Ausstattungsvorschläge mit Quellenangabe liefert. Bewertet wird er an fachlichen Prüffällen.]{.lead}
+
+## Geplanter Umfang
+
+- Automatisiertes Einlesen und Extrahieren relevanter Inhalte aus den Preislisten
+- Strukturierte Zuordnung von Ausstattungen, Sonderausstattungscodes und Preisen
+- Abbildung der dokumentierten Abhängigkeiten
+- Einbeziehung der Car Policy mit verpflichtenden Ausstattungen je Modelltyp
+- Interaktive Abfrage und schrittweise Ausstattungsvorschläge für definierte Baureihen
+- Transparente Anzeige der verwendeten Quellen
+- Qualitätsbewertung anhand fachlicher Prüffälle: Quellenbezug, Konsistenz, Car Policy
+- Einfacher Prozess zum Einspielen neuer oder aktualisierter Preislisten
+
+## Ablauf
+
+- **Blocktage (28.09. bis 01.10.2026):** Einführung, Briefing, Prozessmodell, erste Prototypen
+- **Wöchentlicher Termin (Dienstag, 11:45 bis 13:15 Uhr):** Coaching, Reviews und Abstimmung mit Mercedes-Benz
+- **Semesterende:** Präsentation der Prototypen und Evaluationsergebnisse beim Projektpartner
+
+## Prüfungsleistung {#pruefung}
+
+| Komponente | Gewicht | Termin |
+|---|---|---|
+| Vorprüfungsleistung: Online-Kurse (individuell) | unbenotet | 17.11.2026 |
+| Zwischenpräsentation | 10 % | 01.12.2026 |
+| Abschlusspräsentation mit Live-Demo beim Projektpartner | 10 % | Woche vom 26.01.2027 |
+| Prototyp (GitHub-Repository, reproduzierbar) | 50 % | Abgabe 12.02.2027 |
+| Dokumentation und Evaluation (GitHub-Wiki mit Evaluationsbericht anhand fachlicher Prüffälle) | 30 % | Abgabe 12.02.2027 |
+
+Prototyp, Dokumentation und Präsentationen entstehen im Team.
+
+### Vorprüfungsleistung: Online-Kurse {#online-kurse}
+
+Jede Person belegt die vorgegebenen Online-Kurse und erreicht im jeweiligen Abschlussquiz mindestens 80 %. Die Quizze lassen sich beliebig oft wiederholen. Die Kursliste folgt auf dieser Seite.
+
+## Team-Repository {#team}
+
+Jede Gruppe arbeitet in einem privaten GitHub-Repository. Die Ordnerstruktur ist ein Vorschlag:
+
+| Ordner | Inhalt |
+|---|---|
+| `01_Agenten` | Agenten-Code, Anweisungen, Wissensgrundlagen |
+| `02_Workflows` | Prozessmodelle, n8n-Exporte, Skizzen |
+| `03_Playbook` | Aufgabenbeschreibung, Teamvereinbarung, Bedienungsanleitung |
+| `04_Evaluation` | Prüffälle, Testläufe, Vergleiche |
+
+Im Stamm liegen `README.md` (Projektziel, Ordnerübersicht, Start), `AGENTS.md` (Kontext und Regeln für Coding-Agenten) und `.gitignore` (`.env`, `.venv/`).
+
+## Arbeitsregeln {#regeln}
+
+Die Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung: nicht in öffentliche Repositories, nicht in kostenlose KI-Chats, keine Weitergabe außerhalb des Projekts. Zugangsdaten bleiben in `.env`. Der Agent schlägt vor, ein Mensch prüft und entscheidet.

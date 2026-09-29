@@ -1,0 +1,48 @@
+---
+title: "Agentic AI: Optimierung von Arbeitsprozessen"
+toc: true
+---
+
+[Interdisziplinäres Projekt mit Mercedes-Benz · HdM Stuttgart · WS 2026/27]{.kicker}
+
+::: {.lead}
+Ein Agent, der Preislisten und Car Policy kennt, soll Mitarbeitende bei der Zusammenstellung von Fahrzeugausstattungen unterstützen und jeden Vorschlag auf seine Quellen zurückführen. Die Teams entwickeln diesen Prototyp im Semester und prüfen an fachlichen Prüffällen, ob er hält, was er verspricht.
+:::
+
+## Eckdaten
+
+| | |
+|---|---|
+| **Projektpartner** | Mercedes-Benz |
+| **Blocktage** | 28. September bis 1. Oktober 2026, jeweils 09:00 bis 17:00 Uhr |
+| **Wöchentlicher Termin** | Dienstag, 11:45 bis 13:15 Uhr |
+| **Umfang** | 5 SWS, kombinierte Modulprüfung mit Vorprüfungsleistung |
+| **Betreuung** | [Prof. Dr. Jan Kirenz](https://hdm-stuttgart.de/person/kirenz/) |
+
+Die öffentliche [Projektbeschreibung](https://kirenz.github.io/hdm-projekte/projekte/ws-2026/agentic-ai-arbeitsprozesse.html) fasst Use Case, geplanten Umfang und Prüfungsleistung zusammen.
+
+## Blocktage
+
+| Tag | Schwerpunkt |
+|---|---|
+| [Montag, 28.09.](tage/montag.qmd) | Projektstart, Gruppeneinteilung, Werkzeuge einrichten |
+| [Dienstag, 29.09.](tage/dienstag.qmd) | Briefing durch Mercedes-Benz, Aufgabe in den Gruppen besprechen, Prozessmodell |
+| Mittwoch, 30.09. | folgt |
+| Donnerstag, 01.10. | folgt |
+
+## Schnellzugriff
+
+::: {.todo}
+[Gruppenarbeit]{.todo-label}
+
+<a href="https://forms.gle/xaEENi4qq1Tc3TFz9" class="btn btn-outline" target="_blank" rel="noopener">Umfrage zur Gruppeneinteilung</a>
+<a href="https://docs.google.com/spreadsheets/d/1ImSXd26y3Q6tslFsZJgsWa6n4Q-v9_mIZwoHKVcJ1Yc/edit?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">Gruppeneinteilung</a>
+:::
+
+- [Einrichtung](werkzeuge/einrichtung.qmd): Google für Studierende, Antigravity, uv mit Google ADK und LangChain
+- [Prozessmodellierung](werkzeuge/prozessmodell.qmd): Abläufe als Swimlane-Diagramm, heute und mit Agent
+- [Semesterprojekt](projekt.qmd): Termine, Prüfungsleistung, Arbeitsregeln
+
+## Arbeitsregeln
+
+Die Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung. Sie werden weder auf dieser Website veröffentlicht noch in öffentliche Repositories oder kostenlose KI-Chats kopiert. Team-Repositories sind privat. Zugangsdaten und API-Schlüssel gehören in eine lokale `.env`-Datei, nie in Code, Screenshots oder Dokumente.

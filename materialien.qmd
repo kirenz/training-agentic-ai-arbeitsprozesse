@@ -1,0 +1,37 @@
+---
+title: "Materialien"
+toc: true
+---
+
+## Projekt und Gruppen
+
+| Material | Wofür |
+|---|---|
+| [Projektbeschreibung](https://kirenz.github.io/hdm-projekte/projekte/ws-2026/agentic-ai-arbeitsprozesse.html) | Use Case, Umfang, Prüfungsleistung |
+| [Umfrage zur Gruppeneinteilung](https://forms.gle/xaEENi4qq1Tc3TFz9) | Montag |
+| [Gruppeneinteilung](https://docs.google.com/spreadsheets/d/1ImSXd26y3Q6tslFsZJgsWa6n4Q-v9_mIZwoHKVcJ1Yc/edit?usp=sharing) | Gruppen für das Semester |
+
+## Werkzeuge
+
+| Material | Wofür |
+|---|---|
+| [Google AI Plus für Studierende](https://gemini.google/de/students/?hl=de) | freiwillig, siehe [Einrichtung](werkzeuge/einrichtung.qmd#google) |
+| [Google Antigravity](https://antigravity.google/) · [Antigravity IDE](https://antigravity.google/product/antigravity-ide/) | Entwicklungsumgebung mit Coding-Agent |
+| [Installation von uv](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1) | Python-Projekte für ADK und LangChain |
+| [Google ADK](https://google.github.io/adk-docs/) · [LangChain](https://docs.langchain.com/oss/python/langchain/overview) | Dokumentation der Frameworks |
+| [AGENTS.md](https://agents.md/) | Format und Beispiele |
+
+## Prozessmodellierung
+
+| Material | Wofür |
+|---|---|
+| [Werkzeugkasten Prozessmodellierung](werkzeuge/prozessmodell.qmd) | Symbole, Beispiel, Übertragung auf den Use Case |
+| [Lesehilfe Ablaufskizze](https://docs.google.com/document/d/1pO28YSUSkvbrn8drNZqMMVqimBHT2fiyT0LEfXeF_tY/edit) | ausführlich als Google Doc |
+| Beispiel [heute](material/prozess/aurenta-webinar-ist.svg) und [mit Agent](material/prozess/aurenta-webinar-soll.svg), BPMN: [heute](material/prozess/aurenta-webinar-ist.bpmn), [mit Agent](material/prozess/aurenta-webinar-soll.bpmn) | zum Öffnen in demo.bpmn.io |
+| [draw.io](https://app.diagrams.net/) · [demo.bpmn.io](https://demo.bpmn.io/) | Modelle zeichnen |
+
+## Zum Weiterdenken
+
+| Material | Wofür |
+|---|---|
+| [DHH: Rails World 2026 Opening Keynote](https://www.youtube.com/watch?v=vDjW_dRyKXY) | „Pencils down“: Softwareentwicklung mit Agenten (Englisch) |

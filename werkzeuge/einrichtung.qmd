@@ -1,0 +1,96 @@
+---
+title: "Einrichtung"
+toc: true
+---
+
+[Ein Google-Konto, die Antigravity IDE und uv genügen für den Einstieg. Mit uv entsteht für Google ADK und für LangChain je ein eigenes Python-Projekt.]{.lead}
+
+## Google für Studierende {#google}
+
+::: {.callout-tip title="Freiwillig: Google AI Plus für Studierende"}
+Google stellt Studierenden ein Jahr lang [Google AI Plus](https://gemini.google/de/students/?hl=de) kostenlos bereit, mit höheren Nutzungslimits und zusätzlichen Funktionen. Bei der Registrierung ist eine gültige Zahlungsmethode erforderlich; ohne rechtzeitige Kündigung verlängert sich das Abo nach Ablauf kostenpflichtig. Die Bedingungen stehen auf der Angebotsseite.
+:::
+
+## Google Antigravity {#antigravity}
+
+[Google Antigravity](https://antigravity.google/) ist eine Entwicklungsumgebung mit eingebautem Coding-Agenten: Der Agent schreibt und ändert Code, die Gruppe prüft das Ergebnis.
+
+1. Die [Antigravity IDE](https://antigravity.google/product/antigravity-ide/) herunterladen und installieren.
+2. Mit dem Google-Konto anmelden.
+3. Einen leeren Projektordner öffnen.
+
+## AGENTS.md {#agents-md}
+
+Eine `AGENTS.md` im Projektordner gibt dem Coding-Agenten den Kontext: worum es im Projekt geht, wo was liegt und welche Regeln gelten. Ausgangspunkt ist die [Projektbeschreibung](https://kirenz.github.io/hdm-projekte/projekte/ws-2026/agentic-ai-arbeitsprozesse.html). Die Datei wächst mit dem Projekt; nur Regeln eintragen, die für die Gruppe tatsächlich gelten. [Beispiele auf agents.md](https://agents.md/).
+
+## uv installieren {#uv}
+
+[uv](https://docs.astral.sh/uv/) verwaltet Python-Versionen, Pakete und virtuelle Umgebungen in einem Werkzeug. Installation laut [Anleitung](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1):
+
+Mac:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Windows (PowerShell):
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+Danach das Terminal neu öffnen und mit `uv --version` prüfen.
+
+## Projekt mit Google ADK {#adk}
+
+```bash
+uv init google-adk-test --python 3.13
+cd google-adk-test
+uv add google-adk
+uv add pandas
+```
+
+Den Ordner `google-adk-test` in Antigravity öffnen und im integrierten Terminal die Umgebung aktivieren:
+
+Mac:
+
+```bash
+source .venv/bin/activate
+```
+
+Windows:
+
+```powershell
+.venv\Scripts\activate
+```
+
+[Dokumentation zu Google ADK](https://google.github.io/adk-docs/)
+
+## Projekt mit LangChain {#langchain}
+
+```bash
+uv init langchain-agent --python 3.13
+cd langchain-agent
+uv add langchain
+uv add langchain-google-genai
+```
+
+Den Ordner in Antigravity öffnen und im integrierten Terminal aktivieren:
+
+Mac:
+
+```bash
+source .venv/bin/activate
+```
+
+Windows:
+
+```powershell
+.venv\Scripts\activate
+```
+
+[Dokumentation zu LangChain](https://docs.langchain.com/oss/python/langchain/overview)
+
+## API-Schlüssel
+
+Schlüssel gehören in eine Datei `.env` im Projektordner, die in `.gitignore` steht. Nie in Code, Screenshots, Chats oder Commits.

@@ -1,0 +1,47 @@
+---
+title: "Montag: Projektstart und Einrichtung"
+toc: true
+---
+
+[28. September 2026 · 09:00–17:00 Uhr]{.kicker}
+
+::: {.lead}
+- Projektstart: Ziel, Ablauf im Semester, Prüfungsleistung
+- Gruppeneinteilung über eine kurze Umfrage
+- Werkzeuge einrichten: Google für Studierende, Antigravity, uv
+- Erste Projekte mit Google ADK und LangChain anlegen
+:::
+
+## Projektstart
+
+Überblick über das Semester: Use Case von Mercedes-Benz, die vier Blocktage, der wöchentliche Termin und die [Prüfungsleistung](../projekt.qmd#pruefung). Ausgangspunkt ist die [Projektbeschreibung](https://kirenz.github.io/hdm-projekte/projekte/ws-2026/agentic-ai-arbeitsprozesse.html).
+
+## Gruppeneinteilung {#gruppen}
+
+::: {.todo}
+[Aufgabe]{.todo-label}
+
+Die Umfrage erfasst Erfahrungen, Interessen und gemeinsame Arbeitszeiten. Daraus entstehen die Gruppen für das Semester.
+
+<a href="https://forms.gle/xaEENi4qq1Tc3TFz9" class="btn btn-outline" target="_blank" rel="noopener">Umfrage zur Gruppeneinteilung</a>
+<a href="https://docs.google.com/spreadsheets/d/1ImSXd26y3Q6tslFsZJgsWa6n4Q-v9_mIZwoHKVcJ1Yc/edit?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">Gruppeneinteilung</a>
+:::
+
+## Werkzeuge und Zugänge {#werkzeuge}
+
+Die Schritte stehen im Werkzeugkasten unter [Einrichtung](../werkzeuge/einrichtung.qmd):
+
+1. [Google AI Plus für Studierende](../werkzeuge/einrichtung.qmd#google) aktivieren (freiwillig)
+2. [Google Antigravity](../werkzeuge/einrichtung.qmd#antigravity) installieren
+3. Im Projektordner eine [AGENTS.md](../werkzeuge/einrichtung.qmd#agents-md) mit der Projektbeschreibung anlegen
+4. [uv](../werkzeuge/einrichtung.qmd#uv) installieren und je ein Projekt für [Google ADK](../werkzeuge/einrichtung.qmd#adk) und [LangChain](../werkzeuge/einrichtung.qmd#langchain) anlegen
+
+## Zum Weiterdenken: Pencils down
+
+David Heinemeier Hansson (DHH), Entwickler von Ruby on Rails, hat Rails World 2026 in Austin mit einer Keynote zum Zeitalter der KI-Agenten eröffnet. Seine These: Bei 37signals wird Code nicht mehr von Hand geschrieben, Agenten übernehmen das Schreiben, Menschen geben Richtung und prüfen (Englisch).
+
+{{< video https://www.youtube.com/watch?v=vDjW_dRyKXY >}}
+
+[Keynote auf YouTube öffnen](https://www.youtube.com/watch?v=vDjW_dRyKXY)
+
+[**Weiter zum Dienstag: Briefing und Prozessmodell**](dienstag.qmd)
