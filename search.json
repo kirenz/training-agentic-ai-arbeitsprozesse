@@ -1,0 +1,289 @@
+[
+  {
+    "objectID": "materialien.html",
+    "href": "materialien.html",
+    "title": "Materialien",
+    "section": "",
+    "text": "Material\nWofür\n\n\n\n\nProjektbeschreibung\nUse Case, Umfang, Prüfungsleistung\n\n\nUmfrage zur Gruppeneinteilung\nMontag\n\n\nGruppeneinteilung\nGruppen für das Semester"
+  },
+  {
+    "objectID": "materialien.html#projekt-und-gruppen",
+    "href": "materialien.html#projekt-und-gruppen",
+    "title": "Materialien",
+    "section": "",
+    "text": "Material\nWofür\n\n\n\n\nProjektbeschreibung\nUse Case, Umfang, Prüfungsleistung\n\n\nUmfrage zur Gruppeneinteilung\nMontag\n\n\nGruppeneinteilung\nGruppen für das Semester"
+  },
+  {
+    "objectID": "materialien.html#werkzeuge",
+    "href": "materialien.html#werkzeuge",
+    "title": "Materialien",
+    "section": "Werkzeuge",
+    "text": "Werkzeuge\n\n\n\nMaterial\nWofür\n\n\n\n\nGoogle AI Plus für Studierende\nfreiwillig, siehe Einrichtung\n\n\nGoogle Antigravity · Antigravity IDE\nEntwicklungsumgebung mit Coding-Agent\n\n\nInstallation von uv\nPython-Projekte für ADK und LangChain\n\n\nGoogle ADK · LangChain\nDokumentation der Frameworks\n\n\nAGENTS.md\nFormat und Beispiele"
+  },
+  {
+    "objectID": "materialien.html#prozessmodellierung",
+    "href": "materialien.html#prozessmodellierung",
+    "title": "Materialien",
+    "section": "Prozessmodellierung",
+    "text": "Prozessmodellierung\n\n\n\nMaterial\nWofür\n\n\n\n\nWerkzeugkasten Prozessmodellierung\nSymbole, Beispiel, Übertragung auf den Use Case\n\n\nLesehilfe Ablaufskizze\nausführlich als Google Doc\n\n\nBeispiel heute und mit Agent, BPMN: heute, mit Agent\nzum Öffnen in demo.bpmn.io\n\n\ndraw.io · demo.bpmn.io\nModelle zeichnen"
+  },
+  {
+    "objectID": "materialien.html#zum-weiterdenken",
+    "href": "materialien.html#zum-weiterdenken",
+    "title": "Materialien",
+    "section": "Zum Weiterdenken",
+    "text": "Zum Weiterdenken\n\n\n\nMaterial\nWofür\n\n\n\n\nDHH: Rails World 2026 Opening Keynote\n„Pencils down“: Softwareentwicklung mit Agenten (Englisch)"
+  },
+  {
+    "objectID": "werkzeuge/prozessmodell.html",
+    "href": "werkzeuge/prozessmodell.html",
+    "title": "Prozessmodellierung",
+    "section": "",
+    "text": "Ein Prozessmodell zeigt, wer welchen Schritt ausführt, wo entschieden wird und wo ein Agent sinnvoll ist. Es ist die Grundlage, bevor ein Workflow in n8n oder ein Agent in Python gebaut wird."
+  },
+  {
+    "objectID": "werkzeuge/prozessmodell.html#warum-zuerst-modellieren",
+    "href": "werkzeuge/prozessmodell.html#warum-zuerst-modellieren",
+    "title": "Prozessmodellierung",
+    "section": "Warum zuerst modellieren",
+    "text": "Warum zuerst modellieren\nEin Agent automatisiert einen Ablauf. Wer den Ablauf nicht kennt, baut am Problem vorbei. Das Modell macht drei Dinge sichtbar: welche Schritte feste Regeln sind und ohne Modell funktionieren, wo Sprachverständnis nötig ist und wo ein Mensch prüfen und freigeben muss. Außerdem wird aus dem Modell später die Vorlage für den Prototyp: Ein Coding-Agent wie Antigravity kann aus einem klaren Modell einen ersten Workflow erzeugen, die Gruppe prüft ihn gegen das Modell."
+  },
+  {
+    "objectID": "werkzeuge/prozessmodell.html#swimlane-diagramm-in-bpmn-2.0",
+    "href": "werkzeuge/prozessmodell.html#swimlane-diagramm-in-bpmn-2.0",
+    "title": "Prozessmodellierung",
+    "section": "Swimlane-Diagramm in BPMN 2.0",
+    "text": "Swimlane-Diagramm in BPMN 2.0\nDie Notation ist BPMN 2.0, dieselbe, die Prozessmanagement-Werkzeuge wie SAP Signavio verwenden. Für die Übungen reichen Bahnen und sechs Symbole.\n\n\n\n\n\n\n\nElement\nBedeutung\n\n\n\n\nWaagerechte Bahn (Lane)\nWer den Schritt ausführt, etwa Mitarbeitende, KI-Agent, Workflow-System\n\n\nRechteck mit Person\nEin Mensch entscheidet oder arbeitet\n\n\nRechteck mit Tabelle\nFeste Regel ohne KI, etwa die Pflichtausstattung laut Car Policy\n\n\nRechteck mit Zahnrädern\nModellschritt oder Systemaufruf, etwa ein Vorschlag des Agenten oder das Einlesen einer Preisliste\n\n\nRaute mit X\nEntscheidung; die Pfeile tragen die Antworten (ja, nein)\n\n\nDünner Kreis, dicker Kreis\nStart und Ende\n\n\n\nLesen: von links nach rechts entlang der Pfeile. Jeder Schritt liegt in genau einer Bahn. Ein Modellschritt liegt in der Bahn „KI-Agent“, eine feste Regel im „Workflow-System“, die Freigabe bleibt beim Menschen."
+  },
+  {
+    "objectID": "werkzeuge/prozessmodell.html#beispiel-ablauf-heute-und-mit-agent",
+    "href": "werkzeuge/prozessmodell.html#beispiel-ablauf-heute-und-mit-agent",
+    "title": "Prozessmodellierung",
+    "section": "Beispiel: Ablauf heute und mit Agent",
+    "text": "Beispiel: Ablauf heute und mit Agent\nDas Beispiel stammt aus einem anderen Projekt: Eine fiktive KI-Beratung fasst nach einem Webinar bei ihren Kontakten nach. Es zeigt die Form, nicht den Inhalt für Mercedes-Benz.\nHeute: Das Marketing-Team erledigt alle Schritte von Hand.\n\nMit Agent: Feste Regeln wie die Kontaktsperre prüft das Workflow-System vor dem Modellschritt, der KI-Agent erstellt einen Entwurf, Freigabe und Versand bleiben beim Team.\n\nBPMN-Dateien zum Öffnen und Verändern: heute, mit Agent. Ausführliche Lesehilfe als Google Doc."
+  },
+  {
+    "objectID": "werkzeuge/prozessmodell.html#übertragen-auf-den-preislisten-agenten",
+    "href": "werkzeuge/prozessmodell.html#übertragen-auf-den-preislisten-agenten",
+    "title": "Prozessmodellierung",
+    "section": "Übertragen auf den Preislisten-Agenten",
+    "text": "Übertragen auf den Preislisten-Agenten\nBeim Use Case von Mercedes-Benz helfen vier Fragen:\n\nFeste Regel oder Modellschritt? Pflichtausstattungen und Abhängigkeiten zwischen Codes stehen in den Unterlagen. Sie lassen sich als Regel prüfen und sollten nicht vom Modell erraten werden.\nWo braucht es Sprachverständnis? Eine frei formulierte Anfrage verstehen, passende Ausstattungen vorschlagen, das Ergebnis verständlich erklären.\nWoher stammt jede Aussage? Jeder Vorschlag verweist auf die Fundstelle in Preisliste oder Car Policy.\nWer prüft? Der Agent schlägt vor, Mitarbeitende entscheiden.\n\nDas Einlesen neuer oder aktualisierter Preislisten ist ein eigener Ablauf und bekommt ein eigenes kleines Modell."
+  },
+  {
+    "objectID": "werkzeuge/prozessmodell.html#werkzeuge",
+    "href": "werkzeuge/prozessmodell.html#werkzeuge",
+    "title": "Prozessmodellierung",
+    "section": "Werkzeuge",
+    "text": "Werkzeuge\n\ndraw.io: kostenlos im Browser, Formenbibliothek „BPMN 2.0“ über „Weitere Formen“ aktivieren, speichert in Google Drive oder lokal\ndemo.bpmn.io: öffnet und bearbeitet .bpmn-Dateien direkt im Browser\n\nFür die Teamablage die bearbeitbare Datei und einen Export als PNG oder SVG speichern, zum Beispiel im Ordner 02_Workflows/ des Team-Repositories."
+  },
+  {
+    "objectID": "tage/dienstag.html",
+    "href": "tage/dienstag.html",
+    "title": "Dienstag: Briefing und Prozessmodell",
+    "section": "",
+    "text": "29. September 2026 · 09:00–17:00 Uhr · Briefing durch Mercedes-Benz am Vormittag"
+  },
+  {
+    "objectID": "tage/dienstag.html#tagesergebnis",
+    "href": "tage/dienstag.html#tagesergebnis",
+    "title": "Dienstag: Briefing und Prozessmodell",
+    "section": "Tagesergebnis",
+    "text": "Tagesergebnis\nJede Gruppe hat die Aufgabe in eigenen Worten formuliert, offene Fragen an Mercedes-Benz gesammelt und einen ersten Entwurf des Prozessmodells erstellt: wie die Zusammenstellung einer Fahrzeugausstattung heute abläuft und wie sie mit einem Agenten ablaufen könnte."
+  },
+  {
+    "objectID": "tage/dienstag.html#briefing",
+    "href": "tage/dienstag.html#briefing",
+    "title": "Dienstag: Briefing und Prozessmodell",
+    "section": "Briefing durch Mercedes-Benz",
+    "text": "Briefing durch Mercedes-Benz\nMercedes-Benz stellt den Anwendungsfall vor: Preislisten für ausgewählte Baureihen, Sonderausstattungscodes, dokumentierte Abhängigkeiten und die Car Policy mit verpflichtenden Ausstattungen je Modelltyp. Während des Briefings hilft es, getrennt mitzuschreiben, was tatsächlich gesagt wird und was unklar bleibt.\nDie Unterlagen aus dem Briefing fallen unter die Vertraulichkeitsvereinbarung und werden nicht auf dieser Website abgelegt."
+  },
+  {
+    "objectID": "tage/dienstag.html#uebung-2-1",
+    "href": "tage/dienstag.html#uebung-2-1",
+    "title": "Dienstag: Briefing und Prozessmodell",
+    "section": "Übung 2.1: Die Aufgabe in der Gruppe besprechen",
+    "text": "Übung 2.1: Die Aufgabe in der Gruppe besprechen\n\nEtwa 30 Minuten · in den Gruppen\n\nDie Notizen aus dem Briefing zusammenlegen. Was soll der Agent leisten, für wen und auf Grundlage welcher Unterlagen?\nTrennen: Was hat Mercedes-Benz gesagt, was vermutet die Gruppe? Vermutungen als solche markieren.\nDie Aufgabe in drei bis fünf Sätzen in eigenen Worten aufschreiben, etwa: „Mitarbeitende wollen für Baureihe X eine Ausstattung zusammenstellen, die der Car Policy entspricht. Der Agent schlägt Schritt für Schritt Ausstattungen vor und nennt dazu Code, Preis und Fundstelle in der Preisliste.“\nOffene Fragen an Mercedes-Benz sammeln und je Frage notieren, wofür die Antwort gebraucht wird (zum Beispiel: Wie oft ändern sich die Preislisten? Wichtig für den Prozess zum Einspielen neuer Listen).\nEinen ersten Prüffall festhalten: eine konkrete Anfrage und die Antwort, die fachlich richtig wäre.\n\nErgebnis: Aufgabenbeschreibung, Liste offener Fragen und ein erster Prüffall in der Teamablage."
+  },
+  {
+    "objectID": "tage/dienstag.html#uebung-2-2",
+    "href": "tage/dienstag.html#uebung-2-2",
+    "title": "Dienstag: Briefing und Prozessmodell",
+    "section": "Übung 2.2: Den Ablauf als Prozessmodell skizzieren",
+    "text": "Übung 2.2: Den Ablauf als Prozessmodell skizzieren\n\nEtwa 90 Minuten · in den Gruppen\nMaterial: Werkzeugkasten Prozessmodellierung mit Symbolen und Beispiel, draw.io (Formenbibliothek „BPMN 2.0“) oder demo.bpmn.io.\nTeil 1: Der Ablauf heute. Wie stellen Mitarbeitende laut Briefing heute eine Fahrzeugausstattung zusammen?\n\nDie Beteiligten als Bahnen anlegen, zum Beispiel Mitarbeitende, Fachbereich, Unterlagen (Preisliste, Car Policy).\nDie Schritte von der Anfrage bis zur fertigen Zusammenstellung eintragen: Baureihe wählen, Ausstattung in der Preisliste nachschlagen, Pflichtausstattung laut Car Policy prüfen, Abhängigkeiten zwischen Codes prüfen, Preis ermitteln.\nEntscheidungen als Raute mit beschrifteten Pfeilen darstellen (zum Beispiel: Ausstattung zulässig? ja, nein).\nStellen markieren, an denen heute Zeit verloren geht oder Fehler entstehen.\n\nTeil 2: Der Ablauf mit Agent. Dasselbe Ziel, jetzt mit den Bahnen Mitarbeitende, KI-Agent und Workflow-System.\n\nFestlegen, was eine feste Regel ist und ohne Modell geprüft werden kann, etwa die Pflichtausstattung laut Car Policy oder die Abhängigkeit zwischen zwei Codes. Diese Schritte liegen im Workflow-System.\nFestlegen, wo ein Modellschritt nötig ist, etwa eine frei formulierte Anfrage verstehen oder einen Vorschlag mit Quellenangabe formulieren. Diese Schritte liegen beim KI-Agenten.\nDie menschliche Prüfung als eigenen Schritt bei den Mitarbeitenden einzeichnen: Wer gibt den Vorschlag frei?\nDas Einspielen neuer Preislisten als eigenen kleinen Ablauf ergänzen: Wer liefert die neue Liste, was wird eingelesen, was geprüft?\n\nTeil 3: Abgleich. Mit Farbe oder Kommentar kennzeichnen, welche Schritte aus dem Briefing stammen und welche die Gruppe vorschlägt. Was unklar ist, wandert in die Liste offener Fragen aus Übung 2.1.\nPrüfung: Liegt jeder Schritt in genau einer Bahn? Steht jede feste Regel vor dem Modellschritt, der sich auf sie verlässt? Bleibt die Freigabe beim Menschen? Lässt sich jeder Vorschlag auf eine Quelle zurückführen?\nErgebnis: Beide Modelle als bearbeitbare Datei (.drawio oder .bpmn) und als PNG in der Teamablage, dazu die ergänzte Liste offener Fragen."
+  },
+  {
+    "objectID": "tage/dienstag.html#abschluss",
+    "href": "tage/dienstag.html#abschluss",
+    "title": "Dienstag: Briefing und Prozessmodell",
+    "section": "Vorstellung und offene Fragen",
+    "text": "Vorstellung und offene Fragen\nJede Gruppe zeigt kurz ihr Modell mit Agent, erklärt eine feste Regel und einen Modellschritt und nennt die wichtigste offene Frage an Mercedes-Benz. Keine Folien. Die Fragen werden gesammelt und gebündelt an Mercedes-Benz weitergegeben.\nZurück zum Montag"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
+    "section": "",
+    "text": "Interdisziplinäres Projekt mit Mercedes-Benz · HdM Stuttgart · WS 2026/27"
+  },
+  {
+    "objectID": "index.html#eckdaten",
+    "href": "index.html#eckdaten",
+    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
+    "section": "Eckdaten",
+    "text": "Eckdaten\n\n\n\nProjektpartner\nMercedes-Benz\n\n\nBlocktage\n28. September bis 1. Oktober 2026, jeweils 09:00 bis 17:00 Uhr\n\n\nWöchentlicher Termin\nDienstag, 11:45 bis 13:15 Uhr\n\n\nUmfang\n5 SWS, kombinierte Modulprüfung mit Vorprüfungsleistung\n\n\nBetreuung\nProf. Dr. Jan Kirenz\n\n\n\nDie öffentliche Projektbeschreibung fasst Use Case, geplanten Umfang und Prüfungsleistung zusammen."
+  },
+  {
+    "objectID": "index.html#blocktage",
+    "href": "index.html#blocktage",
+    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
+    "section": "Blocktage",
+    "text": "Blocktage\n\n\n\nTag\nSchwerpunkt\n\n\n\n\nMontag, 28.09.\nProjektstart, Gruppeneinteilung, Werkzeuge einrichten\n\n\nDienstag, 29.09.\nBriefing durch Mercedes-Benz, Aufgabe in den Gruppen besprechen, Prozessmodell\n\n\nMittwoch, 30.09.\nfolgt\n\n\nDonnerstag, 01.10.\nfolgt"
+  },
+  {
+    "objectID": "index.html#schnellzugriff",
+    "href": "index.html#schnellzugriff",
+    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
+    "section": "Schnellzugriff",
+    "text": "Schnellzugriff\n\nGruppenarbeit\nUmfrage zur Gruppeneinteilung Gruppeneinteilung\n\n\nEinrichtung: Google für Studierende, Antigravity, uv mit Google ADK und LangChain\nProzessmodellierung: Abläufe als Swimlane-Diagramm, heute und mit Agent\nSemesterprojekt: Termine, Prüfungsleistung, Arbeitsregeln"
+  },
+  {
+    "objectID": "index.html#arbeitsregeln",
+    "href": "index.html#arbeitsregeln",
+    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
+    "section": "Arbeitsregeln",
+    "text": "Arbeitsregeln\nDie Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung. Sie werden weder auf dieser Website veröffentlicht noch in öffentliche Repositories oder kostenlose KI-Chats kopiert. Team-Repositories sind privat. Zugangsdaten und API-Schlüssel gehören in eine lokale .env-Datei, nie in Code, Screenshots oder Dokumente."
+  },
+  {
+    "objectID": "tage/montag.html",
+    "href": "tage/montag.html",
+    "title": "Montag: Projektstart und Einrichtung",
+    "section": "",
+    "text": "28. September 2026 · 09:00–17:00 Uhr"
+  },
+  {
+    "objectID": "tage/montag.html#projektstart",
+    "href": "tage/montag.html#projektstart",
+    "title": "Montag: Projektstart und Einrichtung",
+    "section": "Projektstart",
+    "text": "Projektstart\nÜberblick über das Semester: Use Case von Mercedes-Benz, die vier Blocktage, der wöchentliche Termin und die Prüfungsleistung. Ausgangspunkt ist die Projektbeschreibung."
+  },
+  {
+    "objectID": "tage/montag.html#gruppen",
+    "href": "tage/montag.html#gruppen",
+    "title": "Montag: Projektstart und Einrichtung",
+    "section": "Gruppeneinteilung",
+    "text": "Gruppeneinteilung\n\nAufgabe\nDie Umfrage erfasst Erfahrungen, Interessen und gemeinsame Arbeitszeiten. Daraus entstehen die Gruppen für das Semester.\nUmfrage zur Gruppeneinteilung Gruppeneinteilung"
+  },
+  {
+    "objectID": "tage/montag.html#werkzeuge",
+    "href": "tage/montag.html#werkzeuge",
+    "title": "Montag: Projektstart und Einrichtung",
+    "section": "Werkzeuge und Zugänge",
+    "text": "Werkzeuge und Zugänge\nDie Schritte stehen im Werkzeugkasten unter Einrichtung:\n\nGoogle AI Plus für Studierende aktivieren (freiwillig)\nGoogle Antigravity installieren\nIm Projektordner eine AGENTS.md mit der Projektbeschreibung anlegen\nuv installieren und je ein Projekt für Google ADK und LangChain anlegen"
+  },
+  {
+    "objectID": "tage/montag.html#zum-weiterdenken-pencils-down",
+    "href": "tage/montag.html#zum-weiterdenken-pencils-down",
+    "title": "Montag: Projektstart und Einrichtung",
+    "section": "Zum Weiterdenken: Pencils down",
+    "text": "Zum Weiterdenken: Pencils down\nDavid Heinemeier Hansson (DHH), Entwickler von Ruby on Rails, hat Rails World 2026 in Austin mit einer Keynote zum Zeitalter der KI-Agenten eröffnet. Seine These: Bei 37signals wird Code nicht mehr von Hand geschrieben, Agenten übernehmen das Schreiben, Menschen geben Richtung und prüfen (Englisch).\n\nKeynote auf YouTube öffnen\nWeiter zum Dienstag: Briefing und Prozessmodell"
+  },
+  {
+    "objectID": "werkzeuge/einrichtung.html",
+    "href": "werkzeuge/einrichtung.html",
+    "title": "Einrichtung",
+    "section": "",
+    "text": "Ein Google-Konto, die Antigravity IDE und uv genügen für den Einstieg. Mit uv entsteht für Google ADK und für LangChain je ein eigenes Python-Projekt."
+  },
+  {
+    "objectID": "werkzeuge/einrichtung.html#google",
+    "href": "werkzeuge/einrichtung.html#google",
+    "title": "Einrichtung",
+    "section": "Google für Studierende",
+    "text": "Google für Studierende\n\n\n\n\n\n\nTippFreiwillig: Google AI Plus für Studierende\n\n\n\nGoogle stellt Studierenden ein Jahr lang Google AI Plus kostenlos bereit, mit höheren Nutzungslimits und zusätzlichen Funktionen. Bei der Registrierung ist eine gültige Zahlungsmethode erforderlich; ohne rechtzeitige Kündigung verlängert sich das Abo nach Ablauf kostenpflichtig. Die Bedingungen stehen auf der Angebotsseite."
+  },
+  {
+    "objectID": "werkzeuge/einrichtung.html#antigravity",
+    "href": "werkzeuge/einrichtung.html#antigravity",
+    "title": "Einrichtung",
+    "section": "Google Antigravity",
+    "text": "Google Antigravity\nGoogle Antigravity ist eine Entwicklungsumgebung mit eingebautem Coding-Agenten: Der Agent schreibt und ändert Code, die Gruppe prüft das Ergebnis.\n\nDie Antigravity IDE herunterladen und installieren.\nMit dem Google-Konto anmelden.\nEinen leeren Projektordner öffnen."
+  },
+  {
+    "objectID": "werkzeuge/einrichtung.html#agents-md",
+    "href": "werkzeuge/einrichtung.html#agents-md",
+    "title": "Einrichtung",
+    "section": "AGENTS.md",
+    "text": "AGENTS.md\nEine AGENTS.md im Projektordner gibt dem Coding-Agenten den Kontext: worum es im Projekt geht, wo was liegt und welche Regeln gelten. Ausgangspunkt ist die Projektbeschreibung. Die Datei wächst mit dem Projekt; nur Regeln eintragen, die für die Gruppe tatsächlich gelten. Beispiele auf agents.md."
+  },
+  {
+    "objectID": "werkzeuge/einrichtung.html#uv",
+    "href": "werkzeuge/einrichtung.html#uv",
+    "title": "Einrichtung",
+    "section": "uv installieren",
+    "text": "uv installieren\nuv verwaltet Python-Versionen, Pakete und virtuelle Umgebungen in einem Werkzeug. Installation laut Anleitung:\nMac:\ncurl -LsSf https://astral.sh/uv/install.sh | sh\nWindows (PowerShell):\npowershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\"\nDanach das Terminal neu öffnen und mit uv --version prüfen."
+  },
+  {
+    "objectID": "werkzeuge/einrichtung.html#adk",
+    "href": "werkzeuge/einrichtung.html#adk",
+    "title": "Einrichtung",
+    "section": "Projekt mit Google ADK",
+    "text": "Projekt mit Google ADK\nuv init google-adk-test --python 3.13\ncd google-adk-test\nuv add google-adk\nuv add pandas\nDen Ordner google-adk-test in Antigravity öffnen und im integrierten Terminal die Umgebung aktivieren:\nMac:\nsource .venv/bin/activate\nWindows:\n.venv\\Scripts\\activate\nDokumentation zu Google ADK"
+  },
+  {
+    "objectID": "werkzeuge/einrichtung.html#langchain",
+    "href": "werkzeuge/einrichtung.html#langchain",
+    "title": "Einrichtung",
+    "section": "Projekt mit LangChain",
+    "text": "Projekt mit LangChain\nuv init langchain-agent --python 3.13\ncd langchain-agent\nuv add langchain\nuv add langchain-google-genai\nDen Ordner in Antigravity öffnen und im integrierten Terminal aktivieren:\nMac:\nsource .venv/bin/activate\nWindows:\n.venv\\Scripts\\activate\nDokumentation zu LangChain"
+  },
+  {
+    "objectID": "werkzeuge/einrichtung.html#api-schlüssel",
+    "href": "werkzeuge/einrichtung.html#api-schlüssel",
+    "title": "Einrichtung",
+    "section": "API-Schlüssel",
+    "text": "API-Schlüssel\nSchlüssel gehören in eine Datei .env im Projektordner, die in .gitignore steht. Nie in Code, Screenshots, Chats oder Commits."
+  },
+  {
+    "objectID": "projekt.html",
+    "href": "projekt.html",
+    "title": "Semesterprojekt",
+    "section": "",
+    "text": "Im Semester entsteht ein Prototyp, der Preislisten und Car Policy einliest, abfragbar macht und Ausstattungsvorschläge mit Quellenangabe liefert. Bewertet wird er an fachlichen Prüffällen."
+  },
+  {
+    "objectID": "projekt.html#geplanter-umfang",
+    "href": "projekt.html#geplanter-umfang",
+    "title": "Semesterprojekt",
+    "section": "Geplanter Umfang",
+    "text": "Geplanter Umfang\n\nAutomatisiertes Einlesen und Extrahieren relevanter Inhalte aus den Preislisten\nStrukturierte Zuordnung von Ausstattungen, Sonderausstattungscodes und Preisen\nAbbildung der dokumentierten Abhängigkeiten\nEinbeziehung der Car Policy mit verpflichtenden Ausstattungen je Modelltyp\nInteraktive Abfrage und schrittweise Ausstattungsvorschläge für definierte Baureihen\nTransparente Anzeige der verwendeten Quellen\nQualitätsbewertung anhand fachlicher Prüffälle: Quellenbezug, Konsistenz, Car Policy\nEinfacher Prozess zum Einspielen neuer oder aktualisierter Preislisten"
+  },
+  {
+    "objectID": "projekt.html#ablauf",
+    "href": "projekt.html#ablauf",
+    "title": "Semesterprojekt",
+    "section": "Ablauf",
+    "text": "Ablauf\n\nBlocktage (28.09. bis 01.10.2026): Einführung, Briefing, Prozessmodell, erste Prototypen\nWöchentlicher Termin (Dienstag, 11:45 bis 13:15 Uhr): Coaching, Reviews und Abstimmung mit Mercedes-Benz\nSemesterende: Präsentation der Prototypen und Evaluationsergebnisse beim Projektpartner"
+  },
+  {
+    "objectID": "projekt.html#pruefung",
+    "href": "projekt.html#pruefung",
+    "title": "Semesterprojekt",
+    "section": "Prüfungsleistung",
+    "text": "Prüfungsleistung\n\n\n\n\n\n\n\n\nKomponente\nGewicht\nTermin\n\n\n\n\nVorprüfungsleistung: Online-Kurse (individuell)\nunbenotet\n17.11.2026\n\n\nZwischenpräsentation\n10 %\n01.12.2026\n\n\nAbschlusspräsentation mit Live-Demo beim Projektpartner\n10 %\nWoche vom 26.01.2027\n\n\nPrototyp (GitHub-Repository, reproduzierbar)\n50 %\nAbgabe 12.02.2027\n\n\nDokumentation und Evaluation (GitHub-Wiki mit Evaluationsbericht anhand fachlicher Prüffälle)\n30 %\nAbgabe 12.02.2027\n\n\n\nPrototyp, Dokumentation und Präsentationen entstehen im Team.\n\nVorprüfungsleistung: Online-Kurse\nJede Person belegt die vorgegebenen Online-Kurse und erreicht im jeweiligen Abschlussquiz mindestens 80 %. Die Quizze lassen sich beliebig oft wiederholen. Die Kursliste folgt auf dieser Seite."
+  },
+  {
+    "objectID": "projekt.html#team",
+    "href": "projekt.html#team",
+    "title": "Semesterprojekt",
+    "section": "Team-Repository",
+    "text": "Team-Repository\nJede Gruppe arbeitet in einem privaten GitHub-Repository. Die Ordnerstruktur ist ein Vorschlag:\n\n\n\n\n\n\n\nOrdner\nInhalt\n\n\n\n\n01_Agenten\nAgenten-Code, Anweisungen, Wissensgrundlagen\n\n\n02_Workflows\nProzessmodelle, n8n-Exporte, Skizzen\n\n\n03_Playbook\nAufgabenbeschreibung, Teamvereinbarung, Bedienungsanleitung\n\n\n04_Evaluation\nPrüffälle, Testläufe, Vergleiche\n\n\n\nIm Stamm liegen README.md (Projektziel, Ordnerübersicht, Start), AGENTS.md (Kontext und Regeln für Coding-Agenten) und .gitignore (.env, .venv/)."
+  },
+  {
+    "objectID": "projekt.html#regeln",
+    "href": "projekt.html#regeln",
+    "title": "Semesterprojekt",
+    "section": "Arbeitsregeln",
+    "text": "Arbeitsregeln\nDie Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung: nicht in öffentliche Repositories, nicht in kostenlose KI-Chats, keine Weitergabe außerhalb des Projekts. Zugangsdaten bleiben in .env. Der Agent schlägt vor, ein Mensch prüft und entscheidet."
+  }
+]
