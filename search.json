@@ -21,6 +21,13 @@
     "text": "Werkzeuge\n\n\n\nMaterial\nWofür\n\n\n\n\nGoogle AI Plus für Studierende\nfreiwillig, siehe Einrichtung\n\n\nGoogle Antigravity · Antigravity IDE\nEntwicklungsumgebung mit Coding-Agent\n\n\nInstallation von uv\nPython-Projekte für ADK und LangChain\n\n\nGoogle ADK · LangChain\nDokumentation der Frameworks\n\n\nAGENTS.md\nFormat und Beispiele"
   },
   {
+    "objectID": "materialien.html#grundlagen-ki-langgraph-und-n8n",
+    "href": "materialien.html#grundlagen-ki-langgraph-und-n8n",
+    "title": "Materialien",
+    "section": "Grundlagen KI, LangGraph und n8n",
+    "text": "Grundlagen KI, LangGraph und n8n\n\n\n\nMaterial\nWofür\n\n\n\n\nFolien: Grundlagen von KI\nMittwoch\n\n\nRepository langgraph-agent\nRechenagent mit LangGraph in zwei Notebooks, siehe Mittwoch\n\n\nDokumentation n8n\nWorkflows, Trigger und Nodes"
+  },
+  {
     "objectID": "materialien.html#prozessmodellierung",
     "href": "materialien.html#prozessmodellierung",
     "title": "Materialien",
@@ -77,6 +84,111 @@
     "text": "Werkzeuge\n\ndraw.io: kostenlos im Browser, Formenbibliothek „BPMN 2.0“ über „Weitere Formen“ aktivieren, speichert in Google Drive oder lokal\ndemo.bpmn.io: öffnet und bearbeitet .bpmn-Dateien direkt im Browser\n\nFür die Teamablage die bearbeitbare Datei und einen Export als PNG oder SVG speichern, zum Beispiel im Ordner 02_Workflows/ des Team-Repositories."
   },
   {
+    "objectID": "tage/mittwoch.html",
+    "href": "tage/mittwoch.html",
+    "title": "Mittwoch: Grundlagen KI, LangGraph und n8n",
+    "section": "",
+    "text": "30. September 2026 · 09:00–17:00 Uhr · Raum I120"
+  },
+  {
+    "objectID": "tage/mittwoch.html#tagesergebnis",
+    "href": "tage/mittwoch.html#tagesergebnis",
+    "title": "Mittwoch: Grundlagen KI, LangGraph und n8n",
+    "section": "Tagesergebnis",
+    "text": "Tagesergebnis\nJede Person kann erklären, wie ein Sprachmodell arbeitet und wo seine Grenzen liegen, hat einen kleinen Agenten mit LangGraph lokal zum Laufen gebracht und kennt die Bausteine eines n8n-Workflows. Damit sind die Werkzeuge für die ersten Prototypen aus dem Prozessmodell vom Dienstag vorhanden."
+  },
+  {
+    "objectID": "tage/mittwoch.html#ki",
+    "href": "tage/mittwoch.html#ki",
+    "title": "Mittwoch: Grundlagen KI, LangGraph und n8n",
+    "section": "Grundlagen von KI",
+    "text": "Grundlagen von KI\nDie Folien führen von der Funktionsweise von Sprachmodellen bis zum Einsatz in Agenten.\n\nFolien\nPräsentation „Grundlagen von KI“"
+  },
+  {
+    "objectID": "tage/mittwoch.html#langgraph",
+    "href": "tage/mittwoch.html#langgraph",
+    "title": "Mittwoch: Grundlagen KI, LangGraph und n8n",
+    "section": "Grundlagen von LangGraph",
+    "text": "Grundlagen von LangGraph\nLangGraph steuert den Ablauf eines Agenten als Graph: Knoten sind Funktionen, Kanten legen fest, was als Nächstes passiert, und ein gemeinsamer Zustand (State) wird von Schritt zu Schritt weitergereicht.\nAls Einstieg dient ein Rechenagent: Ein Sprachmodell wählt zwischen drei Rechenwerkzeugen, LangGraph führt den Ablauf. Das Repository enthält zwei deutsche Jupyter-Notebooks mit Abbildungen und Übungen:\nRepository langgraph-agent\n\n\n\n\n\n\n\nNotebook\nInhalt\n\n\n\n\n00_langgraph_minimal\neine Frage, ein Modellknoten, eine Antwort\n\n\n01_langgraph_quickstart\nRechenagent mit Werkzeugen, State, Knoten, Kanten und Graph\n\n\n\n\nLokal starten\nVoraussetzungen sind uv (siehe Einrichtung) und ein Gemini-API-Key.\ngit clone https://github.com/agentic-ai-mb-group-0/langgraph-agent.git\ncd langgraph-agent\nuv sync --locked\nuv run python -m ipykernel install --sys-prefix --name langgraph-agent --display-name \"LangGraph · langgraph-agent\"\nuv run jupyter lab notebooks/00_langgraph_minimal.ipynb\nIn Jupyter den Kernel LangGraph · langgraph-agent wählen und die Zellen von oben nach unten ausführen. Das Minimal-Notebook fragt den Key verdeckt ab. Für das zweite Notebook den Key in einer .env eintragen (Vorlage .env.example). Der Key gehört nie in Code oder Screenshots.\n\n\nÜbung 3.1: Den Rechenagenten verstehen\n\nDas Minimal-Notebook ausführen und eine eigene Frage stellen.\nIm zweiten Notebook einen mehrstufigen Auftrag ausführen (zum Beispiel erst addieren, dann multiplizieren) und im Nachrichtenverlauf verfolgen, welches Werkzeug das Modell wann wählt.\nDie Übungen am Ende des Notebooks bearbeiten.\n\nPrüfung: Lässt sich für jeden Schritt sagen, ob er eine feste Regel (Python) oder ein Modellschritt ist? Das ist dieselbe Trennung wie im Prozessmodell mit Agent."
+  },
+  {
+    "objectID": "tage/mittwoch.html#n8n",
+    "href": "tage/mittwoch.html#n8n",
+    "title": "Mittwoch: Grundlagen KI, LangGraph und n8n",
+    "section": "Grundlagen von n8n",
+    "text": "Grundlagen von n8n\nn8n ist ein Workflow-System: Ein Trigger startet den Ablauf, Nodes verarbeiten Daten Schritt für Schritt, Verzweigungen bilden Entscheidungen ab. Im Projekt übernimmt n8n die festen Regeln aus dem Prozessmodell, etwa Prüfungen gegen die Car Policy oder das Einspielen neuer Preislisten. Modellschritte lassen sich als eigene Nodes einbinden.\n\nDokumentation von n8n\nWerkzeugkasten Prozessmodellierung: vom Modell zum Workflow\n\nZurück zum Dienstag"
+  },
+  {
+    "objectID": "tage/montag.html",
+    "href": "tage/montag.html",
+    "title": "Montag: Projektstart und Einrichtung",
+    "section": "",
+    "text": "28. September 2026 · 09:00–17:00 Uhr · Raum I120"
+  },
+  {
+    "objectID": "tage/montag.html#projektstart",
+    "href": "tage/montag.html#projektstart",
+    "title": "Montag: Projektstart und Einrichtung",
+    "section": "Projektstart",
+    "text": "Projektstart\nÜberblick über das Semester: Use Case von Mercedes-Benz, die vier Blocktage, der wöchentliche Termin und die Prüfungsleistung. Ausgangspunkt ist die Projektbeschreibung."
+  },
+  {
+    "objectID": "tage/montag.html#gruppen",
+    "href": "tage/montag.html#gruppen",
+    "title": "Montag: Projektstart und Einrichtung",
+    "section": "Gruppeneinteilung",
+    "text": "Gruppeneinteilung\n\nAufgabe\nDie Umfrage erfasst Erfahrungen, Interessen und gemeinsame Arbeitszeiten. Daraus entstehen die Gruppen für das Semester.\nUmfrage zur Gruppeneinteilung Gruppeneinteilung"
+  },
+  {
+    "objectID": "tage/montag.html#werkzeuge",
+    "href": "tage/montag.html#werkzeuge",
+    "title": "Montag: Projektstart und Einrichtung",
+    "section": "Werkzeuge und Zugänge",
+    "text": "Werkzeuge und Zugänge\nDie Schritte stehen im Werkzeugkasten unter Einrichtung:\n\nGoogle AI Plus für Studierende aktivieren (freiwillig)\nGoogle Antigravity installieren\nIm Projektordner eine AGENTS.md mit der Projektbeschreibung anlegen\nuv installieren und je ein Projekt für Google ADK und LangChain anlegen"
+  },
+  {
+    "objectID": "tage/montag.html#zum-weiterdenken-pencils-down",
+    "href": "tage/montag.html#zum-weiterdenken-pencils-down",
+    "title": "Montag: Projektstart und Einrichtung",
+    "section": "Zum Weiterdenken: Pencils down",
+    "text": "Zum Weiterdenken: Pencils down\nDavid Heinemeier Hansson (DHH), Entwickler von Ruby on Rails, hat Rails World 2026 in Austin mit einer Keynote zum Zeitalter der KI-Agenten eröffnet. Seine These: Bei 37signals wird Code nicht mehr von Hand geschrieben, Agenten übernehmen das Schreiben, Menschen geben Richtung und prüfen (Englisch).\n\nKeynote auf YouTube öffnen\nWeiter zum Dienstag: Briefing und Prozessmodell"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
+    "section": "",
+    "text": "Interdisziplinäres Projekt mit Mercedes-Benz · HdM Stuttgart · WS 2026/27"
+  },
+  {
+    "objectID": "index.html#eckdaten",
+    "href": "index.html#eckdaten",
+    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
+    "section": "Eckdaten",
+    "text": "Eckdaten\n\n\n\nProjektpartner\nMercedes-Benz\n\n\nBlocktage\n28. September bis 1. Oktober 2026, jeweils 09:00 bis 17:00 Uhr, Raum I120\n\n\nWöchentlicher Termin\nDienstag, 11:45 bis 13:15 Uhr\n\n\nUmfang\n5 SWS, kombinierte Modulprüfung mit Vorprüfungsleistung\n\n\nBetreuung\nProf. Dr. Jan Kirenz\n\n\n\nDie öffentliche Projektbeschreibung fasst Use Case, geplanten Umfang und Prüfungsleistung zusammen."
+  },
+  {
+    "objectID": "index.html#blocktage",
+    "href": "index.html#blocktage",
+    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
+    "section": "Blocktage",
+    "text": "Blocktage\n\n\n\nTag\nSchwerpunkt\n\n\n\n\nMontag, 28.09.\nProjektstart, Gruppeneinteilung, Werkzeuge einrichten\n\n\nDienstag, 29.09.\nBriefing durch Mercedes-Benz, Aufgabe in den Gruppen besprechen, Prozessmodell\n\n\nMittwoch, 30.09.\nGrundlagen KI, LangGraph und n8n\n\n\nDonnerstag, 01.10.\nfolgt"
+  },
+  {
+    "objectID": "index.html#schnellzugriff",
+    "href": "index.html#schnellzugriff",
+    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
+    "section": "Schnellzugriff",
+    "text": "Schnellzugriff\n\nGruppenarbeit\nUmfrage zur Gruppeneinteilung Gruppeneinteilung\n\n\nEinrichtung: Google für Studierende, Antigravity, uv mit Google ADK und LangChain\nProzessmodellierung: Abläufe als Swimlane-Diagramm, heute und mit Agent\nSemesterprojekt: Termine, Prüfungsleistung, Arbeitsregeln"
+  },
+  {
+    "objectID": "index.html#arbeitsregeln",
+    "href": "index.html#arbeitsregeln",
+    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
+    "section": "Arbeitsregeln",
+    "text": "Arbeitsregeln\nDie Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung. Sie werden weder auf dieser Website veröffentlicht noch in öffentliche Repositories oder kostenlose KI-Chats kopiert. Team-Repositories sind privat. Zugangsdaten und API-Schlüssel gehören in eine lokale .env-Datei, nie in Code, Screenshots oder Dokumente."
+  },
+  {
     "objectID": "tage/dienstag.html",
     "href": "tage/dienstag.html",
     "title": "Dienstag: Briefing und Prozessmodell",
@@ -117,76 +229,6 @@
     "title": "Dienstag: Briefing und Prozessmodell",
     "section": "Vorstellung und offene Fragen",
     "text": "Vorstellung und offene Fragen\nJede Gruppe zeigt kurz ihr Modell mit Agent, erklärt eine feste Regel und einen Modellschritt und nennt die wichtigste offene Frage an Mercedes-Benz. Keine Folien. Die Fragen werden gesammelt und gebündelt an Mercedes-Benz weitergegeben.\nZurück zum Montag"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
-    "section": "",
-    "text": "Interdisziplinäres Projekt mit Mercedes-Benz · HdM Stuttgart · WS 2026/27"
-  },
-  {
-    "objectID": "index.html#eckdaten",
-    "href": "index.html#eckdaten",
-    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
-    "section": "Eckdaten",
-    "text": "Eckdaten\n\n\n\nProjektpartner\nMercedes-Benz\n\n\nBlocktage\n28. September bis 1. Oktober 2026, jeweils 09:00 bis 17:00 Uhr, Raum I120\n\n\nWöchentlicher Termin\nDienstag, 11:45 bis 13:15 Uhr\n\n\nUmfang\n5 SWS, kombinierte Modulprüfung mit Vorprüfungsleistung\n\n\nBetreuung\nProf. Dr. Jan Kirenz\n\n\n\nDie öffentliche Projektbeschreibung fasst Use Case, geplanten Umfang und Prüfungsleistung zusammen."
-  },
-  {
-    "objectID": "index.html#blocktage",
-    "href": "index.html#blocktage",
-    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
-    "section": "Blocktage",
-    "text": "Blocktage\n\n\n\nTag\nSchwerpunkt\n\n\n\n\nMontag, 28.09.\nProjektstart, Gruppeneinteilung, Werkzeuge einrichten\n\n\nDienstag, 29.09.\nBriefing durch Mercedes-Benz, Aufgabe in den Gruppen besprechen, Prozessmodell\n\n\nMittwoch, 30.09.\nfolgt\n\n\nDonnerstag, 01.10.\nfolgt"
-  },
-  {
-    "objectID": "index.html#schnellzugriff",
-    "href": "index.html#schnellzugriff",
-    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
-    "section": "Schnellzugriff",
-    "text": "Schnellzugriff\n\nGruppenarbeit\nUmfrage zur Gruppeneinteilung Gruppeneinteilung\n\n\nEinrichtung: Google für Studierende, Antigravity, uv mit Google ADK und LangChain\nProzessmodellierung: Abläufe als Swimlane-Diagramm, heute und mit Agent\nSemesterprojekt: Termine, Prüfungsleistung, Arbeitsregeln"
-  },
-  {
-    "objectID": "index.html#arbeitsregeln",
-    "href": "index.html#arbeitsregeln",
-    "title": "Agentic AI: Optimierung von Arbeitsprozessen",
-    "section": "Arbeitsregeln",
-    "text": "Arbeitsregeln\nDie Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung. Sie werden weder auf dieser Website veröffentlicht noch in öffentliche Repositories oder kostenlose KI-Chats kopiert. Team-Repositories sind privat. Zugangsdaten und API-Schlüssel gehören in eine lokale .env-Datei, nie in Code, Screenshots oder Dokumente."
-  },
-  {
-    "objectID": "tage/montag.html",
-    "href": "tage/montag.html",
-    "title": "Montag: Projektstart und Einrichtung",
-    "section": "",
-    "text": "28. September 2026 · 09:00–17:00 Uhr · Raum I120"
-  },
-  {
-    "objectID": "tage/montag.html#projektstart",
-    "href": "tage/montag.html#projektstart",
-    "title": "Montag: Projektstart und Einrichtung",
-    "section": "Projektstart",
-    "text": "Projektstart\nÜberblick über das Semester: Use Case von Mercedes-Benz, die vier Blocktage, der wöchentliche Termin und die Prüfungsleistung. Ausgangspunkt ist die Projektbeschreibung."
-  },
-  {
-    "objectID": "tage/montag.html#gruppen",
-    "href": "tage/montag.html#gruppen",
-    "title": "Montag: Projektstart und Einrichtung",
-    "section": "Gruppeneinteilung",
-    "text": "Gruppeneinteilung\n\nAufgabe\nDie Umfrage erfasst Erfahrungen, Interessen und gemeinsame Arbeitszeiten. Daraus entstehen die Gruppen für das Semester.\nUmfrage zur Gruppeneinteilung Gruppeneinteilung"
-  },
-  {
-    "objectID": "tage/montag.html#werkzeuge",
-    "href": "tage/montag.html#werkzeuge",
-    "title": "Montag: Projektstart und Einrichtung",
-    "section": "Werkzeuge und Zugänge",
-    "text": "Werkzeuge und Zugänge\nDie Schritte stehen im Werkzeugkasten unter Einrichtung:\n\nGoogle AI Plus für Studierende aktivieren (freiwillig)\nGoogle Antigravity installieren\nIm Projektordner eine AGENTS.md mit der Projektbeschreibung anlegen\nuv installieren und je ein Projekt für Google ADK und LangChain anlegen"
-  },
-  {
-    "objectID": "tage/montag.html#zum-weiterdenken-pencils-down",
-    "href": "tage/montag.html#zum-weiterdenken-pencils-down",
-    "title": "Montag: Projektstart und Einrichtung",
-    "section": "Zum Weiterdenken: Pencils down",
-    "text": "Zum Weiterdenken: Pencils down\nDavid Heinemeier Hansson (DHH), Entwickler von Ruby on Rails, hat Rails World 2026 in Austin mit einer Keynote zum Zeitalter der KI-Agenten eröffnet. Seine These: Bei 37signals wird Code nicht mehr von Hand geschrieben, Agenten übernehmen das Schreiben, Menschen geben Richtung und prüfen (Englisch).\n\nKeynote auf YouTube öffnen\nWeiter zum Dienstag: Briefing und Prozessmodell"
   },
   {
     "objectID": "werkzeuge/einrichtung.html",

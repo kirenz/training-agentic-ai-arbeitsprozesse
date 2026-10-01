@@ -8,7 +8,7 @@
 
 <meta name="author" content="Jan Kirenz">
 
-<title>Agentic AI: Optimierung von Arbeitsprozessen</title>
+<title>Mittwoch: Grundlagen KI, LangGraph und n8n – Agentic AI: Optimierung von Arbeitsprozessen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,26 +21,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-30bf34a34693ded266ab0d3c7378b607.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-52980e1ee3564822ef858dec7c22e6ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-30bf34a34693ded266ab0d3c7378b607.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-52980e1ee3564822ef858dec7c22e6ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -165,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Agentic AI: Optimierung von Arbeitsprozessen</span>
     </a>
   </div>
@@ -176,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Start</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -185,15 +220,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-blocktage">    
         <li>
-    <a class="dropdown-item" href="./tage/montag.html">
+    <a class="dropdown-item" href="../tage/montag.html">
  <span class="dropdown-text">Montag, 28.09.</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./tage/dienstag.html">
+    <a class="dropdown-item" href="../tage/dienstag.html">
  <span class="dropdown-text">Dienstag, 29.09.</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./tage/mittwoch.html">
+    <a class="dropdown-item" href="../tage/mittwoch.html">
  <span class="dropdown-text">Mittwoch, 30.09.</span></a>
   </li>  
     </ul>
@@ -204,21 +239,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-werkzeugkasten">    
         <li>
-    <a class="dropdown-item" href="./werkzeuge/einrichtung.html">
+    <a class="dropdown-item" href="../werkzeuge/einrichtung.html">
  <span class="dropdown-text">Einrichtung</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./werkzeuge/prozessmodell.html">
+    <a class="dropdown-item" href="../werkzeuge/prozessmodell.html">
  <span class="dropdown-text">Prozessmodellierung</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./projekt.html"> 
+    <a class="nav-link" href="../projekt.html"> 
 <span class="menu-text">Semesterprojekt</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./materialien.html"> 
+    <a class="nav-link" href="../materialien.html"> 
 <span class="menu-text">Materialien</span></a>
   </li>  
 </ul>
@@ -237,10 +272,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul class="collapse">
-  <li><a href="#eckdaten" id="toc-eckdaten" class="nav-link active" data-scroll-target="#eckdaten">Eckdaten</a></li>
-  <li><a href="#blocktage" id="toc-blocktage" class="nav-link" data-scroll-target="#blocktage">Blocktage</a></li>
-  <li><a href="#schnellzugriff" id="toc-schnellzugriff" class="nav-link" data-scroll-target="#schnellzugriff">Schnellzugriff</a></li>
-  <li><a href="#arbeitsregeln" id="toc-arbeitsregeln" class="nav-link" data-scroll-target="#arbeitsregeln">Arbeitsregeln</a></li>
+  <li><a href="#tagesergebnis" id="toc-tagesergebnis" class="nav-link active" data-scroll-target="#tagesergebnis">Tagesergebnis</a></li>
+  <li><a href="#ki" id="toc-ki" class="nav-link" data-scroll-target="#ki">Grundlagen von KI</a></li>
+  <li><a href="#langgraph" id="toc-langgraph" class="nav-link" data-scroll-target="#langgraph">Grundlagen von LangGraph</a></li>
+  <li><a href="#n8n" id="toc-n8n" class="nav-link" data-scroll-target="#n8n">Grundlagen von n8n</a></li>
   </ul>
 </nav>
     </div>
@@ -249,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Agentic AI: Optimierung von Arbeitsprozessen</h1>
+<h1 class="title">Mittwoch: Grundlagen KI, LangGraph und n8n</h1>
 </div>
 
 
@@ -266,82 +301,81 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><span class="kicker">Interdisziplinäres Projekt mit Mercedes-Benz · HdM Stuttgart · WS 2026/27</span></p>
+<p><span class="kicker">30. September 2026 · 09:00–17:00 Uhr · Raum I120</span></p>
 <div class="lead">
-<p>Ein Agent, der Preislisten und Car Policy kennt, soll Mitarbeitende bei der Zusammenstellung von Fahrzeugausstattungen unterstützen und jeden Vorschlag auf seine Quellen zurückführen. Die Teams entwickeln diesen Prototyp im Semester und prüfen an fachlichen Prüffällen, ob er hält, was er verspricht.</p>
+<ul>
+<li>Grundlagen von KI: Folien zum Nachlesen</li>
+<li>Grundlagen von LangGraph: ein Rechenagent im Jupyter-Notebook</li>
+<li>Grundlagen von n8n: Workflows als Gerüst für feste Regeln</li>
+</ul>
 </div>
-<section id="eckdaten" class="level2">
-<h2 class="anchored" data-anchor-id="eckdaten">Eckdaten</h2>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td><strong>Projektpartner</strong></td>
-<td>Mercedes-Benz</td>
-</tr>
-<tr class="even">
-<td><strong>Blocktage</strong></td>
-<td>28. September bis 1. Oktober 2026, jeweils 09:00 bis 17:00 Uhr, Raum I120</td>
-</tr>
-<tr class="odd">
-<td><strong>Wöchentlicher Termin</strong></td>
-<td>Dienstag, 11:45 bis 13:15 Uhr</td>
-</tr>
-<tr class="even">
-<td><strong>Umfang</strong></td>
-<td>5 SWS, kombinierte Modulprüfung mit Vorprüfungsleistung</td>
-</tr>
-<tr class="odd">
-<td><strong>Betreuung</strong></td>
-<td><a href="https://hdm-stuttgart.de/person/kirenz/">Prof.&nbsp;Dr.&nbsp;Jan Kirenz</a></td>
-</tr>
-</tbody>
-</table>
-<p>Die öffentliche <a href="https://kirenz.github.io/hdm-projekte/projekte/ws-2026/agentic-ai-arbeitsprozesse.html">Projektbeschreibung</a> fasst Use Case, geplanten Umfang und Prüfungsleistung zusammen.</p>
+<section id="tagesergebnis" class="level2">
+<h2 class="anchored" data-anchor-id="tagesergebnis">Tagesergebnis</h2>
+<p>Jede Person kann erklären, wie ein Sprachmodell arbeitet und wo seine Grenzen liegen, hat einen kleinen Agenten mit LangGraph lokal zum Laufen gebracht und kennt die Bausteine eines n8n-Workflows. Damit sind die Werkzeuge für die ersten Prototypen aus dem Prozessmodell vom Dienstag vorhanden.</p>
 </section>
-<section id="blocktage" class="level2">
-<h2 class="anchored" data-anchor-id="blocktage">Blocktage</h2>
+<section id="ki" class="level2">
+<h2 class="anchored" data-anchor-id="ki">Grundlagen von KI</h2>
+<p>Die Folien führen von der Funktionsweise von Sprachmodellen bis zum Einsatz in Agenten.</p>
+<div class="todo">
+<p><span class="todo-label">Folien</span></p>
+<p><a href="https://kirenz.github.io/ki-grundlagen/slides.html" class="btn btn-primary" target="_blank" rel="noopener">Präsentation „Grundlagen von KI“</a></p>
+</div>
+</section>
+<section id="langgraph" class="level2">
+<h2 class="anchored" data-anchor-id="langgraph">Grundlagen von LangGraph</h2>
+<p><a href="https://docs.langchain.com/oss/python/langgraph/overview">LangGraph</a> steuert den Ablauf eines Agenten als Graph: Knoten sind Funktionen, Kanten legen fest, was als Nächstes passiert, und ein gemeinsamer Zustand (State) wird von Schritt zu Schritt weitergereicht.</p>
+<p>Als Einstieg dient ein Rechenagent: Ein Sprachmodell wählt zwischen drei Rechenwerkzeugen, LangGraph führt den Ablauf. Das Repository enthält zwei deutsche Jupyter-Notebooks mit Abbildungen und Übungen:</p>
+<p><a href="https://github.com/agentic-ai-mb-group-0/langgraph-agent" class="btn btn-primary" target="_blank" rel="noopener">Repository langgraph-agent</a></p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Tag</th>
-<th>Schwerpunkt</th>
+<th>Notebook</th>
+<th>Inhalt</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="./tage/montag.html">Montag, 28.09.</a></td>
-<td>Projektstart, Gruppeneinteilung, Werkzeuge einrichten</td>
+<td><code>00_langgraph_minimal</code></td>
+<td>eine Frage, ein Modellknoten, eine Antwort</td>
 </tr>
 <tr class="even">
-<td><a href="./tage/dienstag.html">Dienstag, 29.09.</a></td>
-<td>Briefing durch Mercedes-Benz, Aufgabe in den Gruppen besprechen, Prozessmodell</td>
-</tr>
-<tr class="odd">
-<td><a href="./tage/mittwoch.html">Mittwoch, 30.09.</a></td>
-<td>Grundlagen KI, LangGraph und n8n</td>
-</tr>
-<tr class="even">
-<td>Donnerstag, 01.10.</td>
-<td>folgt</td>
+<td><code>01_langgraph_quickstart</code></td>
+<td>Rechenagent mit Werkzeugen, State, Knoten, Kanten und Graph</td>
 </tr>
 </tbody>
 </table>
+<section id="langgraph-start" class="level3">
+<h3 class="anchored" data-anchor-id="langgraph-start">Lokal starten</h3>
+<p>Voraussetzungen sind <a href="https://docs.astral.sh/uv/">uv</a> (siehe <a href="../werkzeuge/einrichtung.html#uv">Einrichtung</a>) und ein <a href="https://aistudio.google.com/apikey">Gemini-API-Key</a>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/agentic-ai-mb-group-0/langgraph-agent.git</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> langgraph-agent</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> sync <span class="at">--locked</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run python <span class="at">-m</span> ipykernel install <span class="at">--sys-prefix</span> <span class="at">--name</span> langgraph-agent <span class="at">--display-name</span> <span class="st">"LangGraph · langgraph-agent"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run jupyter lab notebooks/00_langgraph_minimal.ipynb</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p>In Jupyter den Kernel <strong>LangGraph · langgraph-agent</strong> wählen und die Zellen von oben nach unten ausführen. Das Minimal-Notebook fragt den Key verdeckt ab. Für das zweite Notebook den Key in einer <code>.env</code> eintragen (Vorlage <code>.env.example</code>). Der Key gehört nie in Code oder Screenshots.</p>
 </section>
-<section id="schnellzugriff" class="level2">
-<h2 class="anchored" data-anchor-id="schnellzugriff">Schnellzugriff</h2>
-<div class="todo">
-<p><span class="todo-label">Gruppenarbeit</span></p>
-<p><a href="https://forms.gle/xaEENi4qq1Tc3TFz9" class="btn btn-outline" target="_blank" rel="noopener">Umfrage zur Gruppeneinteilung</a> <a href="https://docs.google.com/spreadsheets/d/1ImSXd26y3Q6tslFsZJgsWa6n4Q-v9_mIZwoHKVcJ1Yc/edit?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">Gruppeneinteilung</a></p>
-</div>
+<section id="übung-3.1-den-rechenagenten-verstehen" class="level3 uebung">
+<h3 class="anchored" data-anchor-id="übung-3.1-den-rechenagenten-verstehen">Übung 3.1: Den Rechenagenten verstehen</h3>
+<ol type="1">
+<li>Das Minimal-Notebook ausführen und eine eigene Frage stellen.</li>
+<li>Im zweiten Notebook einen mehrstufigen Auftrag ausführen (zum Beispiel erst addieren, dann multiplizieren) und im Nachrichtenverlauf verfolgen, welches Werkzeug das Modell wann wählt.</li>
+<li>Die Übungen am Ende des Notebooks bearbeiten.</li>
+</ol>
+<p><strong>Prüfung:</strong> Lässt sich für jeden Schritt sagen, ob er eine feste Regel (Python) oder ein Modellschritt ist? Das ist dieselbe Trennung wie im Prozessmodell mit Agent.</p>
+</section>
+</section>
+<section id="n8n" class="level2">
+<h2 class="anchored" data-anchor-id="n8n">Grundlagen von n8n</h2>
+<p><a href="https://n8n.io/">n8n</a> ist ein Workflow-System: Ein <strong>Trigger</strong> startet den Ablauf, <strong>Nodes</strong> verarbeiten Daten Schritt für Schritt, Verzweigungen bilden Entscheidungen ab. Im Projekt übernimmt n8n die festen Regeln aus dem Prozessmodell, etwa Prüfungen gegen die Car Policy oder das Einspielen neuer Preislisten. Modellschritte lassen sich als eigene Nodes einbinden.</p>
 <ul>
-<li><a href="./werkzeuge/einrichtung.html">Einrichtung</a>: Google für Studierende, Antigravity, uv mit Google ADK und LangChain</li>
-<li><a href="./werkzeuge/prozessmodell.html">Prozessmodellierung</a>: Abläufe als Swimlane-Diagramm, heute und mit Agent</li>
-<li><a href="./projekt.html">Semesterprojekt</a>: Termine, Prüfungsleistung, Arbeitsregeln</li>
+<li><a href="https://docs.n8n.io/">Dokumentation von n8n</a></li>
+<li><a href="../werkzeuge/prozessmodell.html">Werkzeugkasten Prozessmodellierung</a>: vom Modell zum Workflow</li>
 </ul>
-</section>
-<section id="arbeitsregeln" class="level2">
-<h2 class="anchored" data-anchor-id="arbeitsregeln">Arbeitsregeln</h2>
-<p>Die Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung. Sie werden weder auf dieser Website veröffentlicht noch in öffentliche Repositories oder kostenlose KI-Chats kopiert. Team-Repositories sind privat. Zugangsdaten und API-Schlüssel gehören in eine lokale <code>.env</code>-Datei, nie in Code, Screenshots oder Dokumente.</p>
+<p><a href="../tage/dienstag.html"><strong>Zurück zum Dienstag</strong></a></p>
 
 
 </section>
@@ -770,5 +804,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

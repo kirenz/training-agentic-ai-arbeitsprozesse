@@ -192,6 +192,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./tage/dienstag.html">
  <span class="dropdown-text">Dienstag, 29.09.</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./tage/mittwoch.html">
+ <span class="dropdown-text">Mittwoch, 30.09.</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -235,6 +239,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#projekt-und-gruppen" id="toc-projekt-und-gruppen" class="nav-link active" data-scroll-target="#projekt-und-gruppen">Projekt und Gruppen</a></li>
   <li><a href="#werkzeuge" id="toc-werkzeuge" class="nav-link" data-scroll-target="#werkzeuge">Werkzeuge</a></li>
+  <li><a href="#grundlagen-ki-langgraph-und-n8n" id="toc-grundlagen-ki-langgraph-und-n8n" class="nav-link" data-scroll-target="#grundlagen-ki-langgraph-und-n8n">Grundlagen KI, LangGraph und n8n</a></li>
   <li><a href="#prozessmodellierung" id="toc-prozessmodellierung" class="nav-link" data-scroll-target="#prozessmodellierung">Prozessmodellierung</a></li>
   <li><a href="#zum-weiterdenken" id="toc-zum-weiterdenken" class="nav-link" data-scroll-target="#zum-weiterdenken">Zum Weiterdenken</a></li>
   </ul>
@@ -316,6 +321,31 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td><a href="https://agents.md/">AGENTS.md</a></td>
 <td>Format und Beispiele</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="grundlagen-ki-langgraph-und-n8n" class="level2">
+<h2 class="anchored" data-anchor-id="grundlagen-ki-langgraph-und-n8n">Grundlagen KI, LangGraph und n8n</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Material</th>
+<th>Wofür</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://kirenz.github.io/ki-grundlagen/slides.html">Folien: Grundlagen von KI</a></td>
+<td>Mittwoch</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/agentic-ai-mb-group-0/langgraph-agent">Repository langgraph-agent</a></td>
+<td>Rechenagent mit LangGraph in zwei Notebooks, siehe <a href="./tage/mittwoch.html#langgraph">Mittwoch</a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://docs.n8n.io/">Dokumentation n8n</a></td>
+<td>Workflows, Trigger und Nodes</td>
 </tr>
 </tbody>
 </table>
@@ -443,7 +473,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/kirenz\.github\.io\/training-agentic-ai-arbeitsprozesse\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
