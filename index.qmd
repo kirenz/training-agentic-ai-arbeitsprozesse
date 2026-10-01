@@ -27,7 +27,7 @@ Die öffentliche [Projektbeschreibung](https://kirenz.github.io/hdm-projekte/pro
 |---|---|
 | [Montag, 28.09.](tage/montag.qmd) | Projektstart, Gruppeneinteilung, Werkzeuge einrichten |
 | [Dienstag, 29.09.](tage/dienstag.qmd) | Briefing durch Mercedes-Benz, Aufgabe in den Gruppen besprechen, Prozessmodell |
-| Mittwoch, 30.09. | folgt |
+| [Mittwoch, 30.09.](tage/mittwoch.qmd) | Grundlagen KI, LangGraph und n8n |
 | Donnerstag, 01.10. | folgt |
 
 ## Schnellzugriff

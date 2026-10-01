@@ -21,6 +21,14 @@ toc: true
 | [Google ADK](https://google.github.io/adk-docs/) · [LangChain](https://docs.langchain.com/oss/python/langchain/overview) | Dokumentation der Frameworks |
 | [AGENTS.md](https://agents.md/) | Format und Beispiele |
 
+## Grundlagen KI, LangGraph und n8n
+
+| Material | Wofür |
+|---|---|
+| [Folien: Grundlagen von KI](https://kirenz.github.io/ki-grundlagen/slides.html) | Mittwoch |
+| [Repository langgraph-agent](https://github.com/agentic-ai-mb-group-0/langgraph-agent) | Rechenagent mit LangGraph in zwei Notebooks, siehe [Mittwoch](tage/mittwoch.qmd#langgraph) |
+| [Dokumentation n8n](https://docs.n8n.io/) | Workflows, Trigger und Nodes |
+
 ## Prozessmodellierung
 
 | Material | Wofür |

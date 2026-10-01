@@ -1,0 +1,72 @@
+---
+title: "Mittwoch: Grundlagen KI, LangGraph und n8n"
+toc: true
+---
+
+[30. September 2026 · 09:00–17:00 Uhr · Raum I120]{.kicker}
+
+::: {.lead}
+- Grundlagen von KI: Folien zum Nachlesen
+- Grundlagen von LangGraph: ein Rechenagent im Jupyter-Notebook
+- Grundlagen von n8n: Workflows als Gerüst für feste Regeln
+:::
+
+## Tagesergebnis
+
+Jede Person kann erklären, wie ein Sprachmodell arbeitet und wo seine Grenzen liegen, hat einen kleinen Agenten mit LangGraph lokal zum Laufen gebracht und kennt die Bausteine eines n8n-Workflows. Damit sind die Werkzeuge für die ersten Prototypen aus dem Prozessmodell vom Dienstag vorhanden.
+
+## Grundlagen von KI {#ki}
+
+Die Folien führen von der Funktionsweise von Sprachmodellen bis zum Einsatz in Agenten.
+
+::: {.todo}
+[Folien]{.todo-label}
+
+<a href="https://kirenz.github.io/ki-grundlagen/slides.html" class="btn btn-primary" target="_blank" rel="noopener">Präsentation „Grundlagen von KI“</a>
+:::
+
+## Grundlagen von LangGraph {#langgraph}
+
+[LangGraph](https://docs.langchain.com/oss/python/langgraph/overview) steuert den Ablauf eines Agenten als Graph: Knoten sind Funktionen, Kanten legen fest, was als Nächstes passiert, und ein gemeinsamer Zustand (State) wird von Schritt zu Schritt weitergereicht.
+
+Als Einstieg dient ein Rechenagent: Ein Sprachmodell wählt zwischen drei Rechenwerkzeugen, LangGraph führt den Ablauf. Das Repository enthält zwei deutsche Jupyter-Notebooks mit Abbildungen und Übungen:
+
+<a href="https://github.com/agentic-ai-mb-group-0/langgraph-agent" class="btn btn-primary" target="_blank" rel="noopener">Repository langgraph-agent</a>
+
+| Notebook | Inhalt |
+|---|---|
+| `00_langgraph_minimal` | eine Frage, ein Modellknoten, eine Antwort |
+| `01_langgraph_quickstart` | Rechenagent mit Werkzeugen, State, Knoten, Kanten und Graph |
+
+### Lokal starten {#langgraph-start}
+
+Voraussetzungen sind [uv](https://docs.astral.sh/uv/) (siehe [Einrichtung](../werkzeuge/einrichtung.qmd#uv)) und ein [Gemini-API-Key](https://aistudio.google.com/apikey).
+
+```bash
+git clone https://github.com/agentic-ai-mb-group-0/langgraph-agent.git
+cd langgraph-agent
+uv sync --locked
+uv run python -m ipykernel install --sys-prefix --name langgraph-agent --display-name "LangGraph · langgraph-agent"
+uv run jupyter lab notebooks/00_langgraph_minimal.ipynb
+```
+
+In Jupyter den Kernel **LangGraph · langgraph-agent** wählen und die Zellen von oben nach unten ausführen. Das Minimal-Notebook fragt den Key verdeckt ab. Für das zweite Notebook den Key in einer `.env` eintragen (Vorlage `.env.example`). Der Key gehört nie in Code oder Screenshots.
+
+::: {.uebung}
+### Übung 3.1: Den Rechenagenten verstehen
+
+1. Das Minimal-Notebook ausführen und eine eigene Frage stellen.
+2. Im zweiten Notebook einen mehrstufigen Auftrag ausführen (zum Beispiel erst addieren, dann multiplizieren) und im Nachrichtenverlauf verfolgen, welches Werkzeug das Modell wann wählt.
+3. Die Übungen am Ende des Notebooks bearbeiten.
+
+**Prüfung:** Lässt sich für jeden Schritt sagen, ob er eine feste Regel (Python) oder ein Modellschritt ist? Das ist dieselbe Trennung wie im Prozessmodell mit Agent.
+:::
+
+## Grundlagen von n8n {#n8n}
+
+[n8n](https://n8n.io/) ist ein Workflow-System: Ein **Trigger** startet den Ablauf, **Nodes** verarbeiten Daten Schritt für Schritt, Verzweigungen bilden Entscheidungen ab. Im Projekt übernimmt n8n die festen Regeln aus dem Prozessmodell, etwa Prüfungen gegen die Car Policy oder das Einspielen neuer Preislisten. Modellschritte lassen sich als eigene Nodes einbinden.
+
+- [Dokumentation von n8n](https://docs.n8n.io/)
+- [Werkzeugkasten Prozessmodellierung](../werkzeuge/prozessmodell.qmd): vom Modell zum Workflow
+
+[**Zurück zum Dienstag**](dienstag.qmd)

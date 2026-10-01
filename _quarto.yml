@@ -7,6 +7,7 @@ project:
     - index.qmd
     - tage/montag.qmd
     - tage/dienstag.qmd
+    - tage/mittwoch.qmd
     - werkzeuge/einrichtung.qmd
     - werkzeuge/prozessmodell.qmd
     - projekt.qmd
@@ -32,6 +33,8 @@ website:
             text: "Montag, 28.09."
           - href: tage/dienstag.qmd
             text: "Dienstag, 29.09."
+          - href: tage/mittwoch.qmd
+            text: "Mittwoch, 30.09."
       - text: Werkzeugkasten
         menu:
           - href: werkzeuge/einrichtung.qmd
