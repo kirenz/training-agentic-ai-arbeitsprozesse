@@ -3,18 +3,18 @@ title: "Semesterprojekt"
 toc: true
 ---
 
-[Im Semester entsteht ein Prototyp, der Preislisten und Car Policy einliest, abfragbar macht und Ausstattungsvorschläge mit Quellenangabe liefert. Bewertet wird er an fachlichen Prüffällen.]{.lead}
+[Im Semester entsteht ein Prototyp, der Preislisten und Car Policy abfragbar macht und Ausstattungsvorschläge mit Quellenangabe liefert. Bewertet wird er an fachlichen Prüffällen.]{.lead}
 
 ## Geplanter Umfang
 
-- Automatisiertes Einlesen und Extrahieren relevanter Inhalte aus den Preislisten
-- Strukturierte Zuordnung von Ausstattungen, Sonderausstattungscodes und Preisen
+- Anbindung der bereitgestellten Preislisten-Datenbank, an einem Ausschnitt verglichen mit der Extraktion aus den Originaldateien
+- Abfrage von Ausstattungen, Sonderausstattungscodes und Preisen in natürlicher Sprache
 - Abbildung der dokumentierten Abhängigkeiten
 - Einbeziehung der Car Policy mit verpflichtenden Ausstattungen je Modelltyp
 - Interaktive Abfrage und schrittweise Ausstattungsvorschläge für definierte Baureihen
 - Transparente Anzeige der verwendeten Quellen
 - Qualitätsbewertung anhand fachlicher Prüffälle: Quellenbezug, Konsistenz, Car Policy
-- Einfacher Prozess zum Einspielen neuer oder aktualisierter Preislisten
+- Einfacher Prozess zum Einspielen einer aktualisierten Car Policy
 
 ## Ablauf
 
