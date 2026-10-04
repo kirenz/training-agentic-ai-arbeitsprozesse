@@ -14,6 +14,13 @@
     "text": "Material\nWofür\n\n\n\n\nProjektbeschreibung\nUse Case, Umfang, Prüfungsleistung\n\n\nUmfrage zur Gruppeneinteilung\nMontag\n\n\nGruppeneinteilung\nGruppen für das Semester"
   },
   {
+    "objectID": "materialien.html#online-kurse",
+    "href": "materialien.html#online-kurse",
+    "title": "Materialien",
+    "section": "Online-Kurse",
+    "text": "Online-Kurse\n\n\n\nMaterial\nWofür\n\n\n\n\nn8n Course Level 1\nPflicht, siehe Online-Kurse\n\n\nAI Agents in LangGraph\nPflicht\n\n\nEvaluating AI Agents\nPflicht\n\n\nDocument AI: From OCR to Agentic Doc Extraction\nempfohlen"
+  },
+  {
     "objectID": "materialien.html#werkzeuge",
     "href": "materialien.html#werkzeuge",
     "title": "Materialien",
@@ -179,7 +186,7 @@
     "href": "index.html#schnellzugriff",
     "title": "Agentic AI: Optimierung von Arbeitsprozessen",
     "section": "Schnellzugriff",
-    "text": "Schnellzugriff\n\nGruppenarbeit\nUmfrage zur Gruppeneinteilung Gruppeneinteilung\n\n\nEinrichtung: Google für Studierende, Antigravity, uv mit Google ADK und LangChain\nProzessmodellierung: Abläufe als Swimlane-Diagramm, heute und mit Agent\nSemesterprojekt: Termine, Prüfungsleistung, Arbeitsregeln"
+    "text": "Schnellzugriff\n\nGruppenarbeit\nUmfrage zur Gruppeneinteilung Gruppeneinteilung\n\n\nEinrichtung: Google für Studierende, Antigravity, uv mit Google ADK und LangChain\nProzessmodellierung: Abläufe als Swimlane-Diagramm, heute und mit Agent\nSemesterprojekt: Fahrplan, Bewertung, Prüffälle, Arbeitsregeln\nOnline-Kurse: drei Pflichtkurse, Nachweis bis 17.11.2026"
   },
   {
     "objectID": "index.html#arbeitsregeln",
@@ -291,41 +298,69 @@
     "href": "projekt.html",
     "title": "Semesterprojekt",
     "section": "",
-    "text": "Im Semester entsteht ein Prototyp, der Preislisten und Car Policy einliest, abfragbar macht und Ausstattungsvorschläge mit Quellenangabe liefert. Bewertet wird er an fachlichen Prüffällen."
+    "text": "Ein Prototyp macht Preislisten und Car Policy abfragbar und belegt jeden Vorschlag mit einer Quelle. Bewertet wird er an fachlichen Prüffällen."
   },
   {
-    "objectID": "projekt.html#geplanter-umfang",
-    "href": "projekt.html#geplanter-umfang",
+    "objectID": "projekt.html#fahrplan",
+    "href": "projekt.html#fahrplan",
     "title": "Semesterprojekt",
-    "section": "Geplanter Umfang",
-    "text": "Geplanter Umfang\n\nAutomatisiertes Einlesen und Extrahieren relevanter Inhalte aus den Preislisten\nStrukturierte Zuordnung von Ausstattungen, Sonderausstattungscodes und Preisen\nAbbildung der dokumentierten Abhängigkeiten\nEinbeziehung der Car Policy mit verpflichtenden Ausstattungen je Modelltyp\nInteraktive Abfrage und schrittweise Ausstattungsvorschläge für definierte Baureihen\nTransparente Anzeige der verwendeten Quellen\nQualitätsbewertung anhand fachlicher Prüffälle: Quellenbezug, Konsistenz, Car Policy\nEinfacher Prozess zum Einspielen neuer oder aktualisierter Preislisten"
-  },
-  {
-    "objectID": "projekt.html#ablauf",
-    "href": "projekt.html#ablauf",
-    "title": "Semesterprojekt",
-    "section": "Ablauf",
-    "text": "Ablauf\n\nBlocktage (28.09. bis 01.10.2026, Raum I120): Einführung, Briefing, Prozessmodell, erste Prototypen\nWöchentlicher Termin (Dienstag, 11:45 bis 13:15 Uhr): Coaching, Reviews und Abstimmung mit Mercedes-Benz\nSemesterende: Präsentation der Prototypen und Evaluationsergebnisse beim Projektpartner"
+    "section": "Fahrplan",
+    "text": "Fahrplan\n\n\n\nTermin\nWas\nStand bis dahin\n\n\n\n\nbis Di, 17.11.2026\nOnline-Kurse, individuell\nalle Pflichtkurse belegt, Nachweis abgelegt\n\n\nEnde Oktober, Termin folgt\nReview 1 mit Mercedes-Benz, online\nDatenzugriff steht, erste Car-Policy-Regeln greifen, erste Prüffälle\n\n\nDi, 01.12.2026, 11:45 Uhr, I010\nZwischenpräsentation, 10 Minuten je Team\nPrototyp, Prüffälle, offene Punkte, Plan bis Semesterende\n\n\nJanuar, Termin folgt\nReview 2 mit Mercedes-Benz, online\nGeneralprobe, Car Policy 2.0 eingespielt\n\n\nWoche ab 26.01.2027\nAbschlusspräsentation bei Mercedes-Benz, 15 Minuten je Team\nLive-Demo\n\n\nFr, 12.02.2027\nAbgabe Prototyp und Wiki\nletzter Commit\n\n\n\nJeden Dienstag, 11:45 bis 13:15 Uhr: Coaching und Abstimmung."
   },
   {
     "objectID": "projekt.html#pruefung",
     "href": "projekt.html#pruefung",
     "title": "Semesterprojekt",
     "section": "Prüfungsleistung",
-    "text": "Prüfungsleistung\n\n\n\n\n\n\n\n\nKomponente\nGewicht\nTermin\n\n\n\n\nVorprüfungsleistung: Online-Kurse (individuell)\nunbenotet\n17.11.2026\n\n\nZwischenpräsentation\n10 %\n01.12.2026\n\n\nAbschlusspräsentation mit Live-Demo beim Projektpartner\n10 %\nWoche vom 26.01.2027\n\n\nPrototyp (GitHub-Repository, reproduzierbar)\n50 %\nAbgabe 12.02.2027\n\n\nDokumentation und Evaluation (GitHub-Wiki mit Evaluationsbericht anhand fachlicher Prüffälle)\n30 %\nAbgabe 12.02.2027\n\n\n\nPrototyp, Dokumentation und Präsentationen entstehen im Team.\n\nVorprüfungsleistung: Online-Kurse\nJede Person belegt die vorgegebenen Online-Kurse und erreicht im jeweiligen Abschlussquiz mindestens 80 %. Die Quizze lassen sich beliebig oft wiederholen. Die Kursliste folgt auf dieser Seite."
+    "text": "Prüfungsleistung\n\n\n\nKomponente\nGewicht\n\n\n\n\nOnline-Kurse (Vorprüfungsleistung, individuell)\nunbenotet\n\n\nZwischenpräsentation\n10 %\n\n\nAbschlusspräsentation mit Live-Demo\n10 %\n\n\nPrototyp (GitHub-Repository, reproduzierbar)\n50 %\n\n\nDokumentation und Evaluation (GitHub-Wiki)\n30 %\n\n\n\nAlles außer den Online-Kursen entsteht im Team. Details unter Bewertung."
+  },
+  {
+    "objectID": "projekt.html#online-kurse",
+    "href": "projekt.html#online-kurse",
+    "title": "Semesterprojekt",
+    "section": "Online-Kurse",
+    "text": "Online-Kurse\n\n\n\n\nKurs\nUmfang\nWofür im Projekt\n\n\n\n\nPflicht\nn8n Course Level 1\nTextkurs, zwei Workflows\nWorkflow zum Einspielen der Car Policy 2.0\n\n\nPflicht\nAI Agents in LangGraph\n1 h 42 min\nDialog-Agent mit LangGraph\n\n\nPflicht\nEvaluating AI Agents\n2 h 36 min\nEvaluationsbericht\n\n\nEmpfohlen\nDocument AI: From OCR to Agentic Doc Extraction\nca. 3 h\nRohdaten-Weg: Tabellen aus PDFs\n\n\n\n\nNachweis ablegen\nVoraussetzungen: kostenloses Konto bei DeepLearning.AI, eine n8n-Instanz für den n8n-Kurs (zum Beispiel die Testphase von n8n Cloud).\n\nJeden Pflichtkurs vollständig durcharbeiten.\nBei DeepLearning.AI die Kursübersicht öffnen.\nEinen Screenshot machen, auf dem alle Lektionen als erledigt markiert sind.\nBeim n8n-Kurs einen Screenshot vom Abschlussquiz oder vom Badge machen.\nDie Screenshots bis 17.11.2026 im Team-Repository unter 00_Nachweise/&lt;Nachname&gt;/ ablegen.\n\nPrüfung: Drei Screenshots je Person. Kurstitel und eigener Name sind lesbar.\n\n\n\n\n\n\n\nDeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb jetzt einschreiben."
+  },
+  {
+    "objectID": "projekt.html#bewertung",
+    "href": "projekt.html#bewertung",
+    "title": "Semesterprojekt",
+    "section": "Bewertung",
+    "text": "Bewertung\n\nPrototyp: 50 Punkte\n\n\n\n\n\n\n\nKriterium\nPunkte\n\n\n\n\nDatenzugriff: Preislisten-Datenbank angebunden, an einem Ausschnitt mit der Extraktion aus dem Original-PDF verglichen\n8\n\n\nCar Policy abgebildet (Pflicht, Verbot, Kombinationspflichten, Lack und Polster) und mit den Abhängigkeiten der Preisliste verknüpft\n8\n\n\nRetrieval mit transparenter Quellenangabe (LangChain)\n8\n\n\nDialog mit Folgefragen, schrittweisen Vorschlägen und Rückfrage bei Unklarheit (LangGraph)\n8\n\n\nCar Policy 2.0 einspielen (n8n): nur der aktuelle Stand gilt, Änderungen sind erklärbar\n6\n\n\nZusammenspiel von n8n und LangChain\n6\n\n\nCode-Qualität, Struktur, Fehlerbehandlung\n6\n\n\n\n\n\nDokumentation und Evaluation: 30 Punkte\n\n\n\n\n\n\n\nKriterium\nPunkte\n\n\n\n\nArchitektur, Datenfluss, Designentscheidungen\n10\n\n\nEvaluationsbericht\n15\n\n\nÜbergabe an Mercedes-Benz, bekannte Grenzen, Offenlegung der KI-Nutzung\n5\n\n\n\n\n\n\n\n\n\nEin Teil der Prüffälle wird erst nach der Abgabe bekannt gegeben und gegen den abgegebenen Stand ausgeführt.\n\n\n\nTeamarbeit: Alle tragen gleichwertig bei. Peer-Bewertung, Commits und Board-Aktivität fließen ein. Bei zu geringem Beitrag sinkt die Einzelnote um bis zu 0,7 gegenüber der Teamnote."
+  },
+  {
+    "objectID": "projekt.html#leitplanken",
+    "href": "projekt.html#leitplanken",
+    "title": "Semesterprojekt",
+    "section": "Leitplanken",
+    "text": "Leitplanken\n\nNur das Mietmodell.\nNur die aktuelle Car-Policy-Version zählt.\nNur verpflichtende Regeln zählen, keine Empfehlungen.\nKeine Aussage zur Verfügbarkeit. Das Team legt dafür eine Standardantwort fest.\nJede Antwort nennt ihre Quelle.\nFehlt eine Information: nachfragen oder „weiß ich nicht“ sagen, nie raten."
+  },
+  {
+    "objectID": "projekt.html#prueffaelle",
+    "href": "projekt.html#prueffaelle",
+    "title": "Semesterprojekt",
+    "section": "Prüffälle",
+    "text": "Prüffälle\nAb sofort in 04_Evaluation sammeln, ein Fall pro Zeile:\n\n\n\n\n\n\n\nFeld\nBeispiel\n\n\n\n\nID\nPF-007\n\n\nFrage\nWelche Motorisierungen gibt es für Baureihe X?\n\n\nErwartete Antwort\nfachlich richtige Antwort in Stichworten\n\n\nQuelle\nPreisliste, Seite 4\n\n\nRegeltyp\nPreis, Pflicht, Verbot, Kombination, Version, Verfügbarkeit\n\n\nErgebnis\nrichtig oder falsch, je Lauf (mindestens drei Läufe)\n\n\n\nBis Review 1: mindestens ein Prüffall je Regeltyp."
+  },
+  {
+    "objectID": "projekt.html#daten",
+    "href": "projekt.html#daten",
+    "title": "Semesterprojekt",
+    "section": "Daten und Rückfragen",
+    "text": "Daten und Rückfragen\n\nPreislisten-Datenbank: Jedes Team erhält einen eigenen Zugang per E-Mail. Zugangsdaten gehören in die .env.\nBis dahin: mit dem Rohdaten-Weg an einem Ausschnitt beginnen. Der Vergleich gehört ohnehin zur Bewertung.\nRückfragen an Mercedes-Benz: im Team sammeln und zum Dienstagstermin vor einem Review mitbringen. Keine Einzelanfragen an Mercedes-Benz."
   },
   {
     "objectID": "projekt.html#team",
     "href": "projekt.html#team",
     "title": "Semesterprojekt",
     "section": "Team-Repository",
-    "text": "Team-Repository\nJede Gruppe arbeitet in einem privaten GitHub-Repository. Die Ordnerstruktur ist ein Vorschlag:\n\n\n\n\n\n\n\nOrdner\nInhalt\n\n\n\n\n01_Agenten\nAgenten-Code, Anweisungen, Wissensgrundlagen\n\n\n02_Workflows\nProzessmodelle, n8n-Exporte, Skizzen\n\n\n03_Playbook\nAufgabenbeschreibung, Teamvereinbarung, Bedienungsanleitung\n\n\n04_Evaluation\nPrüffälle, Testläufe, Vergleiche\n\n\n\nIm Stamm liegen README.md (Projektziel, Ordnerübersicht, Start), AGENTS.md (Kontext und Regeln für Coding-Agenten) und .gitignore (.env, .venv/)."
+    "text": "Team-Repository\nJede Gruppe arbeitet in einem privaten Repository ihrer GitHub-Organisation und plant im GitHub Project. Vorgeschlagene Ordner:\n\n\n\n\n\n\n\nOrdner\nInhalt\n\n\n\n\n00_Nachweise\nScreenshots der Online-Kurse, je Person ein Unterordner\n\n\n01_Agenten\nAgenten-Code, Anweisungen, Wissensgrundlagen\n\n\n02_Workflows\nProzessmodelle, n8n-Exporte, Skizzen\n\n\n03_Playbook\nAufgabenbeschreibung, Teamvereinbarung, Bedienungsanleitung\n\n\n04_Evaluation\nPrüffälle, Testläufe, Vergleiche\n\n\n\nIm Stamm liegen README.md (Projektziel, Ordnerübersicht, Start), AGENTS.md (Kontext und Regeln für Coding-Agenten) und .gitignore (.env, .venv/)."
   },
   {
     "objectID": "projekt.html#regeln",
     "href": "projekt.html#regeln",
     "title": "Semesterprojekt",
     "section": "Arbeitsregeln",
-    "text": "Arbeitsregeln\nDie Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung: nicht in öffentliche Repositories, nicht in kostenlose KI-Chats, keine Weitergabe außerhalb des Projekts. Zugangsdaten bleiben in .env. Der Agent schlägt vor, ein Mensch prüft und entscheidet."
+    "text": "Arbeitsregeln\n\n\n\n\n\n\nDie Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung: nicht in öffentliche Repositories, nicht in kostenlose KI-Chats, keine Weitergabe außerhalb des Projekts.\n\n\n\nZugangsdaten bleiben in .env. Der Agent schlägt vor, ein Mensch prüft und entscheidet."
   }
 ]

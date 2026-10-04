@@ -336,7 +336,8 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><a href="./werkzeuge/einrichtung.html">Einrichtung</a>: Google für Studierende, Antigravity, uv mit Google ADK und LangChain</li>
 <li><a href="./werkzeuge/prozessmodell.html">Prozessmodellierung</a>: Abläufe als Swimlane-Diagramm, heute und mit Agent</li>
-<li><a href="./projekt.html">Semesterprojekt</a>: Termine, Prüfungsleistung, Arbeitsregeln</li>
+<li><a href="./projekt.html">Semesterprojekt</a>: Fahrplan, Bewertung, Prüffälle, Arbeitsregeln</li>
+<li><a href="./projekt.html#online-kurse">Online-Kurse</a>: drei Pflichtkurse, Nachweis bis 17.11.2026</li>
 </ul>
 </section>
 <section id="arbeitsregeln" class="level2">
@@ -420,7 +421,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/kirenz\.github\.io\/training-agentic-ai-arbeitsprozesse\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
