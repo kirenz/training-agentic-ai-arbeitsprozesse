@@ -11,6 +11,15 @@ toc: true
 | [Umfrage zur Gruppeneinteilung](https://forms.gle/xaEENi4qq1Tc3TFz9) | Montag |
 | [Gruppeneinteilung](https://docs.google.com/spreadsheets/d/1ImSXd26y3Q6tslFsZJgsWa6n4Q-v9_mIZwoHKVcJ1Yc/edit?usp=sharing) | Gruppen für das Semester |
 
+## Online-Kurse
+
+| Material | Wofür |
+|---|---|
+| [n8n Course Level 1](https://docs.n8n.io/courses/level-one) | Pflicht, siehe [Online-Kurse](projekt.qmd#online-kurse) |
+| [AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/) | Pflicht |
+| [Evaluating AI Agents](https://www.deeplearning.ai/short-courses/evaluating-ai-agents/) | Pflicht |
+| [Document AI: From OCR to Agentic Doc Extraction](https://www.deeplearning.ai/short-courses/document-ai-from-ocr-to-agentic-doc-extraction/) | empfohlen |
+
 ## Werkzeuge
 
 | Material | Wofür |

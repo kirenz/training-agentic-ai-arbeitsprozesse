@@ -41,7 +41,8 @@ Die öffentliche [Projektbeschreibung](https://kirenz.github.io/hdm-projekte/pro
 
 - [Einrichtung](werkzeuge/einrichtung.qmd): Google für Studierende, Antigravity, uv mit Google ADK und LangChain
 - [Prozessmodellierung](werkzeuge/prozessmodell.qmd): Abläufe als Swimlane-Diagramm, heute und mit Agent
-- [Semesterprojekt](projekt.qmd): Termine, Prüfungsleistung, Arbeitsregeln
+- [Semesterprojekt](projekt.qmd): Fahrplan, Bewertung, Prüffälle, Arbeitsregeln
+- [Online-Kurse](projekt.qmd#online-kurse): drei Pflichtkurse, Nachweis bis 17.11.2026
 
 ## Arbeitsregeln
 

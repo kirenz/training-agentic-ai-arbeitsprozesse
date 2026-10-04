@@ -3,47 +3,125 @@ title: "Semesterprojekt"
 toc: true
 ---
 
-[Im Semester entsteht ein Prototyp, der Preislisten und Car Policy abfragbar macht und Ausstattungsvorschläge mit Quellenangabe liefert. Bewertet wird er an fachlichen Prüffällen.]{.lead}
+[Ein Prototyp macht Preislisten und Car Policy abfragbar und belegt jeden Vorschlag mit einer Quelle. Bewertet wird er an fachlichen Prüffällen.]{.lead}
 
-## Geplanter Umfang
+## Fahrplan {#fahrplan}
 
-- Anbindung der bereitgestellten Preislisten-Datenbank, an einem Ausschnitt verglichen mit der Extraktion aus den Originaldateien
-- Abfrage von Ausstattungen, Sonderausstattungscodes und Preisen in natürlicher Sprache
-- Abbildung der dokumentierten Abhängigkeiten
-- Einbeziehung der Car Policy mit verpflichtenden Ausstattungen je Modelltyp
-- Interaktive Abfrage und schrittweise Ausstattungsvorschläge für definierte Baureihen
-- Transparente Anzeige der verwendeten Quellen
-- Qualitätsbewertung anhand fachlicher Prüffälle: Quellenbezug, Konsistenz, Car Policy
-- Einfacher Prozess zum Einspielen einer aktualisierten Car Policy
+| Termin | Was | Stand bis dahin |
+|---|---|---|
+| bis Di, 17.11.2026 | [Online-Kurse](#online-kurse), individuell | alle Pflichtkurse belegt, Nachweis abgelegt |
+| Ende Oktober, Termin folgt | Review 1 mit Mercedes-Benz, online | Datenzugriff steht, erste Car-Policy-Regeln greifen, erste Prüffälle |
+| Di, 01.12.2026, 11:45 Uhr, I010 | Zwischenpräsentation, 10 Minuten je Team | Prototyp, Prüffälle, offene Punkte, Plan bis Semesterende |
+| Januar, Termin folgt | Review 2 mit Mercedes-Benz, online | Generalprobe, Car Policy 2.0 eingespielt |
+| Woche ab 26.01.2027 | Abschlusspräsentation bei Mercedes-Benz, 15 Minuten je Team | Live-Demo |
+| Fr, 12.02.2027 | Abgabe Prototyp und Wiki | letzter Commit |
 
-## Ablauf
-
-- **Blocktage (28.09. bis 01.10.2026, Raum I120):** Einführung, Briefing, Prozessmodell, erste Prototypen
-- **Wöchentlicher Termin (Dienstag, 11:45 bis 13:15 Uhr):** Coaching, Reviews und Abstimmung mit Mercedes-Benz
-- **Semesterende:** Präsentation der Prototypen und Evaluationsergebnisse beim Projektpartner
+Jeden Dienstag, 11:45 bis 13:15 Uhr: Coaching und Abstimmung.
 
 ## Prüfungsleistung {#pruefung}
 
-| Komponente | Gewicht | Termin |
-|---|---|---|
-| Vorprüfungsleistung: Online-Kurse (individuell) | unbenotet | 17.11.2026 |
-| Zwischenpräsentation | 10 % | 01.12.2026 |
-| Abschlusspräsentation mit Live-Demo beim Projektpartner | 10 % | Woche vom 26.01.2027 |
-| Prototyp (GitHub-Repository, reproduzierbar) | 50 % | Abgabe 12.02.2027 |
-| Dokumentation und Evaluation (GitHub-Wiki mit Evaluationsbericht anhand fachlicher Prüffälle) | 30 % | Abgabe 12.02.2027 |
+| Komponente | Gewicht |
+|---|---|
+| Online-Kurse (Vorprüfungsleistung, individuell) | unbenotet |
+| Zwischenpräsentation | 10 % |
+| Abschlusspräsentation mit Live-Demo | 10 % |
+| Prototyp (GitHub-Repository, reproduzierbar) | 50 % |
+| Dokumentation und Evaluation (GitHub-Wiki) | 30 % |
 
-Prototyp, Dokumentation und Präsentationen entstehen im Team.
+Alles außer den Online-Kursen entsteht im Team. Details unter [Bewertung](#bewertung).
 
-### Vorprüfungsleistung: Online-Kurse {#online-kurse}
+## Online-Kurse {#online-kurse}
 
-Jede Person belegt die vorgegebenen Online-Kurse und erreicht im jeweiligen Abschlussquiz mindestens 80 %. Die Quizze lassen sich beliebig oft wiederholen. Die Kursliste folgt auf dieser Seite.
+| | Kurs | Umfang | Wofür im Projekt |
+|---|---|---|---|
+| Pflicht | [n8n Course Level 1](https://docs.n8n.io/courses/level-one) | Textkurs, zwei Workflows | Workflow zum Einspielen der Car Policy 2.0 |
+| Pflicht | [AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/) | 1 h 42 min | Dialog-Agent mit LangGraph |
+| Pflicht | [Evaluating AI Agents](https://www.deeplearning.ai/short-courses/evaluating-ai-agents/) | 2 h 36 min | Evaluationsbericht |
+| Empfohlen | [Document AI: From OCR to Agentic Doc Extraction](https://www.deeplearning.ai/short-courses/document-ai-from-ocr-to-agentic-doc-extraction/) | ca. 3 h | Rohdaten-Weg: Tabellen aus PDFs |
+
+::: {.uebung}
+### Nachweis ablegen
+
+**Voraussetzungen:** kostenloses Konto bei DeepLearning.AI, eine n8n-Instanz für den n8n-Kurs (zum Beispiel die Testphase von n8n Cloud).
+
+1. Jeden Pflichtkurs vollständig durcharbeiten.
+2. Bei DeepLearning.AI die Kursübersicht öffnen.
+3. Einen Screenshot machen, auf dem alle Lektionen als erledigt markiert sind.
+4. Beim n8n-Kurs einen Screenshot vom Abschlussquiz oder vom Badge machen.
+5. Die Screenshots bis 17.11.2026 im Team-Repository unter `00_Nachweise/<Nachname>/` ablegen.
+
+**Prüfung:** Drei Screenshots je Person. Kurstitel und eigener Name sind lesbar.
+:::
+
+::: {.callout-warning}
+DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb jetzt einschreiben.
+:::
+
+## Bewertung {#bewertung}
+
+### Prototyp: 50 Punkte
+
+| Kriterium | Punkte |
+|---|---|
+| Datenzugriff: Preislisten-Datenbank angebunden, an einem Ausschnitt mit der Extraktion aus dem Original-PDF verglichen | 8 |
+| Car Policy abgebildet (Pflicht, Verbot, Kombinationspflichten, Lack und Polster) und mit den Abhängigkeiten der Preisliste verknüpft | 8 |
+| Retrieval mit transparenter Quellenangabe (LangChain) | 8 |
+| Dialog mit Folgefragen, schrittweisen Vorschlägen und Rückfrage bei Unklarheit (LangGraph) | 8 |
+| Car Policy 2.0 einspielen (n8n): nur der aktuelle Stand gilt, Änderungen sind erklärbar | 6 |
+| Zusammenspiel von n8n und LangChain | 6 |
+| Code-Qualität, Struktur, Fehlerbehandlung | 6 |
+
+### Dokumentation und Evaluation: 30 Punkte
+
+| Kriterium | Punkte |
+|---|---|
+| Architektur, Datenfluss, Designentscheidungen | 10 |
+| Evaluationsbericht | 15 |
+| Übergabe an Mercedes-Benz, bekannte Grenzen, Offenlegung der KI-Nutzung | 5 |
+
+::: {.callout-important}
+Ein Teil der Prüffälle wird erst nach der Abgabe bekannt gegeben und gegen den abgegebenen Stand ausgeführt.
+:::
+
+**Teamarbeit:** Alle tragen gleichwertig bei. Peer-Bewertung, Commits und Board-Aktivität fließen ein. Bei zu geringem Beitrag sinkt die Einzelnote um bis zu 0,7 gegenüber der Teamnote.
+
+## Leitplanken {#leitplanken}
+
+- Nur das Mietmodell.
+- Nur die aktuelle Car-Policy-Version zählt.
+- Nur verpflichtende Regeln zählen, keine Empfehlungen.
+- Keine Aussage zur Verfügbarkeit. Das Team legt dafür eine Standardantwort fest.
+- Jede Antwort nennt ihre Quelle.
+- Fehlt eine Information: nachfragen oder „weiß ich nicht“ sagen, nie raten.
+
+## Prüffälle {#prueffaelle}
+
+Ab sofort in `04_Evaluation` sammeln, ein Fall pro Zeile:
+
+| Feld | Beispiel |
+|---|---|
+| ID | PF-007 |
+| Frage | Welche Motorisierungen gibt es für Baureihe X? |
+| Erwartete Antwort | fachlich richtige Antwort in Stichworten |
+| Quelle | Preisliste, Seite 4 |
+| Regeltyp | Preis, Pflicht, Verbot, Kombination, Version, Verfügbarkeit |
+| Ergebnis | richtig oder falsch, je Lauf (mindestens drei Läufe) |
+
+**Bis Review 1:** mindestens ein Prüffall je Regeltyp.
+
+## Daten und Rückfragen {#daten}
+
+- **Preislisten-Datenbank:** Jedes Team erhält einen eigenen Zugang per E-Mail. Zugangsdaten gehören in die `.env`.
+- **Bis dahin:** mit dem Rohdaten-Weg an einem Ausschnitt beginnen. Der Vergleich gehört ohnehin zur Bewertung.
+- **Rückfragen an Mercedes-Benz:** im Team sammeln und zum Dienstagstermin vor einem Review mitbringen. Keine Einzelanfragen an Mercedes-Benz.
 
 ## Team-Repository {#team}
 
-Jede Gruppe arbeitet in einem privaten GitHub-Repository. Die Ordnerstruktur ist ein Vorschlag:
+Jede Gruppe arbeitet in einem privaten Repository ihrer GitHub-Organisation und plant im GitHub Project. Vorgeschlagene Ordner:
 
 | Ordner | Inhalt |
 |---|---|
+| `00_Nachweise` | Screenshots der Online-Kurse, je Person ein Unterordner |
 | `01_Agenten` | Agenten-Code, Anweisungen, Wissensgrundlagen |
 | `02_Workflows` | Prozessmodelle, n8n-Exporte, Skizzen |
 | `03_Playbook` | Aufgabenbeschreibung, Teamvereinbarung, Bedienungsanleitung |
@@ -53,4 +131,8 @@ Im Stamm liegen `README.md` (Projektziel, Ordnerübersicht, Start), `AGENTS.md` 
 
 ## Arbeitsregeln {#regeln}
 
-Die Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung: nicht in öffentliche Repositories, nicht in kostenlose KI-Chats, keine Weitergabe außerhalb des Projekts. Zugangsdaten bleiben in `.env`. Der Agent schlägt vor, ein Mensch prüft und entscheidet.
+::: {.callout-warning}
+Die Unterlagen von Mercedes-Benz fallen unter die Vertraulichkeitsvereinbarung: nicht in öffentliche Repositories, nicht in kostenlose KI-Chats, keine Weitergabe außerhalb des Projekts.
+:::
+
+Zugangsdaten bleiben in `.env`. Der Agent schlägt vor, ein Mensch prüft und entscheidet.
