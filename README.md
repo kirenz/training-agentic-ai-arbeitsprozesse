@@ -2,7 +2,7 @@
 
 Kurswebsite für das HdM-Projekt mit Mercedes-Benz, WS 2026/27. Quarto-Website, veröffentlicht auf GitHub Pages: https://kirenz.github.io/training-agentic-ai-arbeitsprozesse/
 
-Aufbau und Stil übernommen aus `~/code/presentation/training-growth-marketing` (Theme, Passwortschutz, Seitenmuster).
+Aufbau und Stil übernommen aus `~/code/hdm/projekte-lehre/projekte-ws2627/growth-marketing/training-growth-marketing` (Theme, Passwortschutz, Seitenmuster).
 
 ## Lokal ansehen und veröffentlichen
 
