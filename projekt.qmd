@@ -13,7 +13,7 @@ toc: true
 | Ende Oktober, Termin folgt | Review 1 mit Mercedes-Benz, online | Datenzugriff steht, erste Car-Policy-Regeln greifen, erste Prüffälle |
 | Di, 01.12.2026, 11:45 Uhr, I010 | Zwischenpräsentation, 10 Minuten je Team | Prototyp, Prüffälle, offene Punkte, Plan bis Semesterende |
 | Januar, Termin folgt | Review 2 mit Mercedes-Benz, online | Generalprobe, Car Policy 2.0 eingespielt |
-| Woche ab 26.01.2027 | Abschlusspräsentation bei Mercedes-Benz, 15 Minuten je Team | Live-Demo |
+| Di, 02.02.2027, Kundencenter Werk Sindelfingen | Abschlusspräsentation bei Mercedes-Benz, 15 Minuten je Team | Live-Demo |
 | Fr, 12.02.2027 | Abgabe Prototyp und Wiki | letzter Commit |
 
 Jeden Dienstag, 11:45 bis 13:15 Uhr: Coaching und Abstimmung.
