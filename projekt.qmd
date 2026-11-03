@@ -46,11 +46,11 @@ Alles außer den Online-Kursen entsteht im Team. Details unter [Bewertung](#bewe
 
 1. Jeden Pflichtkurs vollständig durcharbeiten.
 2. Bei DeepLearning.AI die Kursübersicht öffnen.
-3. Einen Screenshot machen, auf dem alle Lektionen als erledigt markiert sind.
+3. Einen Screenshot machen, auf dem alle Lektionen als erledigt markiert sind. Das Quiz am Kursende ist nicht nötig (es steckt hinter der kostenpflichtigen Membership).
 4. Beim n8n-Kurs einen Screenshot vom Abschlussquiz oder vom Badge machen.
 5. Die Screenshots bis 17.11.2026 im Team-Repository unter `00_Nachweise/<Nachname>/` ablegen.
 
-**Prüfung:** Drei Screenshots je Person. Kurstitel und eigener Name sind lesbar.
+**Prüfung:** Drei Screenshots je Person. Der Kurstitel ist lesbar. Die Zuordnung zur Person ergibt sich aus dem Ordner `00_Nachweise/<Nachname>/`.
 :::
 
 ::: {.callout-warning}
