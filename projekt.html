@@ -365,8 +365,8 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td>Pflicht</td>
-<td><a href="https://docs.n8n.io/courses/level-one">n8n Course Level 1</a></td>
-<td>Textkurs, zwei Workflows</td>
+<td><a href="https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about">n8n Quickstart (QS101)</a></td>
+<td>n8n Academy, englisch, ca. 3 bis 5 Std.</td>
 <td>Workflow zum Einspielen der Car Policy 2.0</td>
 </tr>
 <tr class="even">
@@ -391,7 +391,7 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <section id="nachweis-ablegen" class="level3 uebung">
 <h3 class="anchored" data-anchor-id="nachweis-ablegen">Nachweis ablegen</h3>
-<p><strong>Voraussetzungen:</strong> kostenloses Konto bei DeepLearning.AI, eine n8n-Instanz für den n8n-Kurs (zum Beispiel die Testphase von n8n Cloud).</p>
+<p><strong>Voraussetzungen:</strong> kostenlose Konten bei DeepLearning.AI und bei der n8n Academy, eine n8n-Instanz für den n8n-Kurs (zum Beispiel die Testphase von n8n Cloud).</p>
 <ol type="1">
 <li>Jeden Pflichtkurs vollständig durcharbeiten.</li>
 <li>Bei DeepLearning.AI die Kursübersicht öffnen.</li>
@@ -692,7 +692,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/kirenz\.github\.io\/training-agentic-ai-arbeitsprozesse\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

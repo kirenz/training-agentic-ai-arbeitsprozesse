@@ -18,7 +18,7 @@
     "href": "materialien.html#online-kurse",
     "title": "Materialien",
     "section": "Online-Kurse",
-    "text": "Online-Kurse\n\n\n\nMaterial\nWofür\n\n\n\n\nn8n Course Level 1\nPflicht, siehe Online-Kurse\n\n\nAI Agents in LangGraph\nPflicht\n\n\nEvaluating AI Agents\nPflicht\n\n\nDocument AI: From OCR to Agentic Doc Extraction\nempfohlen"
+    "text": "Online-Kurse\n\n\n\nMaterial\nWofür\n\n\n\n\nn8n Quickstart (QS101)\nPflicht, siehe Online-Kurse\n\n\nAI Agents in LangGraph\nPflicht\n\n\nEvaluating AI Agents\nPflicht\n\n\nDocument AI: From OCR to Agentic Doc Extraction\nempfohlen"
   },
   {
     "objectID": "materialien.html#werkzeuge",
@@ -319,7 +319,7 @@
     "href": "projekt.html#online-kurse",
     "title": "Semesterprojekt",
     "section": "Online-Kurse",
-    "text": "Online-Kurse\n\n\n\n\nKurs\nUmfang\nWofür im Projekt\n\n\n\n\nPflicht\nn8n Course Level 1\nTextkurs, zwei Workflows\nWorkflow zum Einspielen der Car Policy 2.0\n\n\nPflicht\nAI Agents in LangGraph\n1 h 42 min\nDialog-Agent mit LangGraph\n\n\nPflicht\nEvaluating AI Agents\n2 h 36 min\nEvaluationsbericht\n\n\nEmpfohlen\nDocument AI: From OCR to Agentic Doc Extraction\nca. 3 h\nRohdaten-Weg: Tabellen aus PDFs\n\n\n\n\nNachweis ablegen\nVoraussetzungen: kostenloses Konto bei DeepLearning.AI, eine n8n-Instanz für den n8n-Kurs (zum Beispiel die Testphase von n8n Cloud).\n\nJeden Pflichtkurs vollständig durcharbeiten.\nBei DeepLearning.AI die Kursübersicht öffnen.\nEinen Screenshot machen, auf dem alle Lektionen als erledigt markiert sind. Das Quiz am Kursende ist nicht nötig (es steckt hinter der kostenpflichtigen Membership).\nBeim n8n-Kurs einen Screenshot vom Abschlussquiz oder vom Badge machen.\nDie Screenshots bis 17.11.2026 im Team-Repository unter 00_Nachweise/&lt;Nachname&gt;/ ablegen.\n\nPrüfung: Drei Screenshots je Person. Der Kurstitel ist lesbar. Die Zuordnung zur Person ergibt sich aus dem Ordner 00_Nachweise/&lt;Nachname&gt;/.\n\n\n\n\n\n\n\nDeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb jetzt einschreiben."
+    "text": "Online-Kurse\n\n\n\n\nKurs\nUmfang\nWofür im Projekt\n\n\n\n\nPflicht\nn8n Quickstart (QS101)\nn8n Academy, englisch, ca. 3 bis 5 Std.\nWorkflow zum Einspielen der Car Policy 2.0\n\n\nPflicht\nAI Agents in LangGraph\n1 h 42 min\nDialog-Agent mit LangGraph\n\n\nPflicht\nEvaluating AI Agents\n2 h 36 min\nEvaluationsbericht\n\n\nEmpfohlen\nDocument AI: From OCR to Agentic Doc Extraction\nca. 3 h\nRohdaten-Weg: Tabellen aus PDFs\n\n\n\n\nNachweis ablegen\nVoraussetzungen: kostenlose Konten bei DeepLearning.AI und bei der n8n Academy, eine n8n-Instanz für den n8n-Kurs (zum Beispiel die Testphase von n8n Cloud).\n\nJeden Pflichtkurs vollständig durcharbeiten.\nBei DeepLearning.AI die Kursübersicht öffnen.\nEinen Screenshot machen, auf dem alle Lektionen als erledigt markiert sind. Das Quiz am Kursende ist nicht nötig (es steckt hinter der kostenpflichtigen Membership).\nBeim n8n-Kurs einen Screenshot vom Abschlussquiz oder vom Badge machen.\nDie Screenshots bis 17.11.2026 im Team-Repository unter 00_Nachweise/&lt;Nachname&gt;/ ablegen.\n\nPrüfung: Drei Screenshots je Person. Der Kurstitel ist lesbar. Die Zuordnung zur Person ergibt sich aus dem Ordner 00_Nachweise/&lt;Nachname&gt;/.\n\n\n\n\n\n\n\nDeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb jetzt einschreiben."
   },
   {
     "objectID": "projekt.html#bewertung",
