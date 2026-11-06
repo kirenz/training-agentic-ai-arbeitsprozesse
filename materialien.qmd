@@ -15,7 +15,7 @@ toc: true
 
 | Material | Wofür |
 |---|---|
-| [n8n Course Level 1](https://docs.n8n.io/courses/level-one) | Pflicht, siehe [Online-Kurse](projekt.qmd#online-kurse) |
+| [n8n Quickstart (QS101)](https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about) | Pflicht, siehe [Online-Kurse](projekt.qmd#online-kurse) |
 | [AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/) | Pflicht |
 | [Evaluating AI Agents](https://www.deeplearning.ai/short-courses/evaluating-ai-agents/) | Pflicht |
 | [Document AI: From OCR to Agentic Doc Extraction](https://www.deeplearning.ai/short-courses/document-ai-from-ocr-to-agentic-doc-extraction/) | empfohlen |

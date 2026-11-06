@@ -34,7 +34,7 @@ Alles außer den Online-Kursen entsteht im Team. Details unter [Bewertung](#bewe
 
 | | Kurs | Umfang | Wofür im Projekt |
 |---|---|---|---|
-| Pflicht | [n8n Course Level 1](https://docs.n8n.io/courses/level-one) | Textkurs, zwei Workflows | Workflow zum Einspielen der Car Policy 2.0 |
+| Pflicht | [n8n Quickstart (QS101)](https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about) | n8n Academy, englisch, ca. 3 bis 5 Std. | Workflow zum Einspielen der Car Policy 2.0 |
 | Pflicht | [AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/) | 1 h 42 min | Dialog-Agent mit LangGraph |
 | Pflicht | [Evaluating AI Agents](https://www.deeplearning.ai/short-courses/evaluating-ai-agents/) | 2 h 36 min | Evaluationsbericht |
 | Empfohlen | [Document AI: From OCR to Agentic Doc Extraction](https://www.deeplearning.ai/short-courses/document-ai-from-ocr-to-agentic-doc-extraction/) | ca. 3 h | Rohdaten-Weg: Tabellen aus PDFs |
@@ -42,7 +42,7 @@ Alles außer den Online-Kursen entsteht im Team. Details unter [Bewertung](#bewe
 ::: {.uebung}
 ### Nachweis ablegen
 
-**Voraussetzungen:** kostenloses Konto bei DeepLearning.AI, eine n8n-Instanz für den n8n-Kurs (zum Beispiel die Testphase von n8n Cloud).
+**Voraussetzungen:** kostenlose Konten bei DeepLearning.AI und bei der n8n Academy, eine n8n-Instanz für den n8n-Kurs (zum Beispiel die Testphase von n8n Cloud).
 
 1. Jeden Pflichtkurs vollständig durcharbeiten.
 2. Bei DeepLearning.AI die Kursübersicht öffnen.
