@@ -61,14 +61,16 @@ DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb j
 
 ### Prototyp: 50 Punkte
 
+**Werkzeuge:** n8n ist Pflicht. Für Retrieval und Dialog wählt jedes Team ein Agenten-Framework: LangChain/LangGraph oder Google ADK. Weitere Frameworks sind erlaubt, ein Vergleich mehrerer Frameworks ist keine Pflicht. Wer vergleicht, dokumentiert das Ergebnis als Designentscheidung.
+
 | Kriterium | Punkte |
 |---|---|
 | Datenzugriff: Preislisten-Datenbank angebunden, an einem Ausschnitt mit der Extraktion aus dem Original-PDF verglichen | 8 |
 | Car Policy abgebildet (Pflicht, Verbot, Kombinationspflichten, Lack und Polster) und mit den Abhängigkeiten der Preisliste verknüpft | 8 |
-| Retrieval mit transparenter Quellenangabe (LangChain) | 8 |
-| Dialog mit Folgefragen, schrittweisen Vorschlägen und Rückfrage bei Unklarheit (LangGraph) | 8 |
+| Retrieval mit transparenter Quellenangabe (LangChain/LangGraph oder Google ADK) | 8 |
+| Dialog mit Folgefragen, schrittweisen Vorschlägen und Rückfrage bei Unklarheit (LangGraph oder Google ADK) | 8 |
 | Car Policy 2.0 einspielen (n8n): nur der aktuelle Stand gilt, Änderungen sind erklärbar | 6 |
-| Zusammenspiel von n8n und LangChain | 6 |
+| Zusammenspiel von n8n und Agenten-Framework | 6 |
 | Code-Qualität, Struktur, Fehlerbehandlung | 6 |
 
 ### Dokumentation und Evaluation: 30 Punkte
