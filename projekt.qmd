@@ -73,9 +73,11 @@ DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb j
 | Car Policy abgebildet (Pflicht, Verbot, Kombinationspflichten, Lack und Polster) und mit den Abhängigkeiten der Preisliste verknüpft | 8 |
 | Retrieval mit transparenter Quellenangabe | 8 |
 | Dialog mit Folgefragen, schrittweisen Vorschlägen und Rückfrage bei Unklarheit | 8 |
-| Car Policy 2.0 einspielen: nur der aktuelle Stand gilt, Änderungen sind erklärbar | 6 |
+| Car Policy 2.0 einspielen: nur der aktuelle Stand gilt, Änderungen sind intern nachvollziehbar | 6 |
 | Nachvollziehbare Datenübergabe und funktionierendes Zusammenspiel sinnvoller Teilschritte | 6 |
 | Code-Qualität, Struktur, Fehlerbehandlung | 6 |
+
+Die Punkte für den Prototyp ergeben sich aus dem Repository und aus dem Austausch mit den Teams während des Semesters, zum Beispiel wenn in den Feedbackterminen gemeinsam auf Code, Prompts oder SQL-Abfragen geschaut wird.
 
 ### Dokumentation und Evaluation: 30 Punkte
 
@@ -95,11 +97,12 @@ Ein Teil der Prüffälle wird erst nach der Abgabe bekannt gegeben und gegen den
 
 ## Leitplanken {#leitplanken}
 
-- Nur das Mietmodell.
-- Nur die aktuelle Car-Policy-Version zählt.
+- Die Car Policy gilt nur im Mietmodell. Jede Antwort ordnet ein, ob sie für Miete oder Kauf gilt: per Rückfrage oder als getrennte Antwort. Geht aus der Frage eindeutig hervor, ob Miete oder Kauf gemeint ist, entfällt die Rückfrage.
+- Nur die aktuelle Car-Policy-Version zählt. Dass etwas früher erlaubt war, erfahren Kund:innen nicht.
 - Nur verpflichtende Regeln zählen, keine Empfehlungen.
+- Erwähnt die Car Policy eine Ausstattung nicht, ist sie frei bestellbar.
 - Keine Aussage zur Verfügbarkeit. Das Team legt dafür eine Standardantwort fest.
-- Jede Antwort nennt ihre Quelle.
+- Jede Antwort ist mit einer Quelle belegt. Für Tests ist die Quelle sichtbar, im UI für Kund:innen ist sie optional.
 - Fehlt eine Information: nachfragen oder „weiß ich nicht“ sagen, nie raten.
 
 ## Prüffälle {#prueffaelle}
