@@ -389,6 +389,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<p>Die Pflichtkurse vermitteln Grundlagen und Beispiele. Sie schreiben nicht vor, welche Werkzeuge ihr für euren Prototyp einsetzen müsst.</p>
 <section id="nachweis-ablegen" class="level3 uebung">
 <h3 class="anchored" data-anchor-id="nachweis-ablegen">Nachweis ablegen</h3>
 <p><strong>Voraussetzungen:</strong> kostenlose Konten bei DeepLearning.AI und bei der n8n Academy, eine n8n-Instanz für den n8n-Kurs (zum Beispiel die Testphase von n8n Cloud).</p>
@@ -416,7 +417,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="bewertung">Bewertung</h2>
 <section id="prototyp-50-punkte" class="level3">
 <h3 class="anchored" data-anchor-id="prototyp-50-punkte">Prototyp: 50 Punkte</h3>
-<p><strong>Werkzeuge:</strong> n8n ist Pflicht. Für Retrieval und Dialog wählt jedes Team ein Agenten-Framework: LangChain/LangGraph oder Google ADK. Weitere Frameworks sind erlaubt, ein Vergleich mehrerer Frameworks ist keine Pflicht. Wer vergleicht, dokumentiert das Ergebnis als Designentscheidung.</p>
+<p><strong>Werkzeuge und Vorgehen:</strong> Jedes Team wählt eine zur Aufgabe passende Umsetzung und begründet seine Entscheidung. Eine vollständige Lösung in n8n ist ebenso möglich wie eine Umsetzung mit einem Agenten-Framework oder eine sinnvolle Kombination. Bestehende funktionsfähige Lösungen dürfen weiterentwickelt werden. Es gibt keine Pflicht zu einem zusätzlichen Betatest, zu zwei Agenten, zu zwei Ansätzen oder zu einer bestimmten Toolkombination. Ein Framework-Vergleich ist optional. Ihr dürft mehrere bereits vorhandene agentische Ansätze zeigen und einen davon vertieft evaluieren.</p>
+<p><strong>Datenfluss:</strong> Zeigt nachvollziehbar, welche Daten zwischen den sinnvollen Teilschritten eurer Lösung übergeben werden und wie sie weiterverarbeitet werden. Eine Datenvorbereitung in n8n mit anschließender Übergabe ist ein mögliches Beispiel, keine Vorgabe. Auch eine Lösung innerhalb eines einzigen Werkzeugs kann dies erfüllen. Entscheidend sind die fachliche Qualität, die Evaluation und eine begründete, verständliche Umsetzung.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -438,19 +440,19 @@ ul.task-list li input[type="checkbox"] {
 <td>8</td>
 </tr>
 <tr class="odd">
-<td>Retrieval mit transparenter Quellenangabe (LangChain/LangGraph oder Google ADK)</td>
+<td>Retrieval mit transparenter Quellenangabe</td>
 <td>8</td>
 </tr>
 <tr class="even">
-<td>Dialog mit Folgefragen, schrittweisen Vorschlägen und Rückfrage bei Unklarheit (LangGraph oder Google ADK)</td>
+<td>Dialog mit Folgefragen, schrittweisen Vorschlägen und Rückfrage bei Unklarheit</td>
 <td>8</td>
 </tr>
 <tr class="odd">
-<td>Car Policy 2.0 einspielen (n8n): nur der aktuelle Stand gilt, Änderungen sind erklärbar</td>
+<td>Car Policy 2.0 einspielen: nur der aktuelle Stand gilt, Änderungen sind intern nachvollziehbar</td>
 <td>6</td>
 </tr>
 <tr class="even">
-<td>Zusammenspiel von n8n und Agenten-Framework</td>
+<td>Nachvollziehbare Datenübergabe und funktionierendes Zusammenspiel sinnvoller Teilschritte</td>
 <td>6</td>
 </tr>
 <tr class="odd">
@@ -459,6 +461,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<p>Die Punkte für den Prototyp ergeben sich aus dem Repository und aus dem Austausch mit den Teams während des Semesters, zum Beispiel wenn in den Feedbackterminen gemeinsam auf Code, Prompts oder SQL-Abfragen geschaut wird.</p>
 </section>
 <section id="dokumentation-und-evaluation-30-punkte" class="level3">
 <h3 class="anchored" data-anchor-id="dokumentation-und-evaluation-30-punkte">Dokumentation und Evaluation: 30 Punkte</h3>
@@ -498,17 +501,19 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p><strong>Individuelles Verständnis agentischer KI:</strong> Jede Person befasst sich inhaltlich mit agentischer KI und kann die zentralen Konzepte sowie den eigenen Beitrag verständlich erklären. Eine Mitarbeit ausschließlich an der Oberfläche oder an reiner Automation ohne Agentenbezug reicht nicht aus. Unterschiedliche Rollen sind möglich; entscheidend sind ein nachvollziehbarer eigener Beitrag und das Verständnis seines Zusammenhangs mit der agentischen Lösung.</p>
 <p><strong>Teamarbeit:</strong> Alle tragen gleichwertig bei. Peer-Bewertung, Commits und Board-Aktivität fließen ein. Bei zu geringem Beitrag sinkt die Einzelnote um bis zu 0,7 gegenüber der Teamnote.</p>
 </section>
 </section>
 <section id="leitplanken" class="level2">
 <h2 class="anchored" data-anchor-id="leitplanken">Leitplanken</h2>
 <ul>
-<li>Nur das Mietmodell.</li>
-<li>Nur die aktuelle Car-Policy-Version zählt.</li>
+<li>Die Car Policy gilt nur im Mietmodell. Jede Antwort ordnet ein, ob sie für Miete oder Kauf gilt: per Rückfrage oder als getrennte Antwort. Geht aus der Frage eindeutig hervor, ob Miete oder Kauf gemeint ist, entfällt die Rückfrage.</li>
+<li>Nur die aktuelle Car-Policy-Version zählt. Dass etwas früher erlaubt war, erfahren Kund:innen nicht.</li>
 <li>Nur verpflichtende Regeln zählen, keine Empfehlungen.</li>
+<li>Erwähnt die Car Policy eine Ausstattung nicht, ist sie frei bestellbar.</li>
 <li>Keine Aussage zur Verfügbarkeit. Das Team legt dafür eine Standardantwort fest.</li>
-<li>Jede Antwort nennt ihre Quelle.</li>
+<li>Jede Antwort ist mit einer Quelle belegt. Für Tests ist die Quelle sichtbar, im UI für Kund:innen ist sie optional.</li>
 <li>Fehlt eine Information: nachfragen oder „weiß ich nicht“ sagen, nie raten.</li>
 </ul>
 </section>
