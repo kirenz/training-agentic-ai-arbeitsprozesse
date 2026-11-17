@@ -39,7 +39,7 @@ Alles außer den Online-Kursen entsteht im Team. Details unter [Bewertung](#bewe
 | Pflicht | [Evaluating AI Agents](https://www.deeplearning.ai/short-courses/evaluating-ai-agents/) | 2 h 36 min | Evaluationsbericht |
 | Empfohlen | [Document AI: From OCR to Agentic Doc Extraction](https://www.deeplearning.ai/short-courses/document-ai-from-ocr-to-agentic-doc-extraction/) | ca. 3 h | Rohdaten-Weg: Tabellen aus PDFs |
 
-Die Pflichtkurse vermitteln Grundlagen und Beispiele. Sie schreiben nicht vor, welche Werkzeuge ihr für euren Prototyp einsetzen müsst.
+Die Pflichtkurse vermitteln Grundlagen und Beispiele. Sie schreiben nicht vor, welche Werkzeuge Sie für Ihren Prototyp einsetzen müssen.
 
 ::: {.uebung}
 ### Nachweis ablegen
@@ -63,9 +63,9 @@ DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb j
 
 ### Prototyp: 50 Punkte
 
-**Werkzeuge und Vorgehen:** Jedes Team wählt eine zur Aufgabe passende Umsetzung und begründet seine Entscheidung. Eine vollständige Lösung in n8n ist ebenso möglich wie eine Umsetzung mit einem Agenten-Framework oder eine sinnvolle Kombination. Bestehende funktionsfähige Lösungen dürfen weiterentwickelt werden. Es gibt keine Pflicht zu einem zusätzlichen Betatest, zu zwei Agenten, zu zwei Ansätzen oder zu einer bestimmten Toolkombination. Ein Framework-Vergleich ist optional. Ihr dürft mehrere bereits vorhandene agentische Ansätze zeigen und einen davon vertieft evaluieren.
+**Werkzeuge und Vorgehen:** Jedes Team wählt eine zur Aufgabe passende Umsetzung und begründet seine Entscheidung. Eine vollständige Lösung in n8n ist ebenso möglich wie eine Umsetzung mit einem Agenten-Framework oder eine sinnvolle Kombination. Bestehende funktionsfähige Lösungen dürfen weiterentwickelt werden. Es gibt keine Pflicht zu einem zusätzlichen Betatest, zu zwei Agenten, zu zwei Ansätzen oder zu einer bestimmten Toolkombination. Ein Framework-Vergleich ist optional. Sie dürfen mehrere bereits vorhandene agentische Ansätze zeigen und einen davon vertieft evaluieren.
 
-**Datenfluss:** Zeigt nachvollziehbar, welche Daten zwischen den sinnvollen Teilschritten eurer Lösung übergeben werden und wie sie weiterverarbeitet werden. Eine Datenvorbereitung in n8n mit anschließender Übergabe ist ein mögliches Beispiel, keine Vorgabe. Auch eine Lösung innerhalb eines einzigen Werkzeugs kann dies erfüllen. Entscheidend sind die fachliche Qualität, die Evaluation und eine begründete, verständliche Umsetzung.
+**Datenfluss:** Zeigen Sie nachvollziehbar, welche Daten zwischen den sinnvollen Teilschritten Ihrer Lösung übergeben werden und wie sie weiterverarbeitet werden. Eine Datenvorbereitung in n8n mit anschließender Übergabe ist ein mögliches Beispiel, keine Vorgabe. Auch eine Lösung innerhalb eines einzigen Werkzeugs kann dies erfüllen. Entscheidend sind die fachliche Qualität, die Evaluation und eine begründete, verständliche Umsetzung.
 
 | Kriterium | Punkte |
 |---|---|
