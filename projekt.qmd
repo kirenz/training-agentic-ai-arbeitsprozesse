@@ -63,9 +63,9 @@ DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb j
 
 ### Prototyp: 50 Punkte
 
-**Werkzeuge und Vorgehen:** Jedes Team wählt eine zur Aufgabe passende Umsetzung und begründet seine Entscheidung. Eine vollständige Lösung in n8n ist ebenso möglich wie eine Umsetzung mit einem Agenten-Framework oder eine sinnvolle Kombination. Bestehende funktionsfähige Lösungen dürfen weiterentwickelt werden. Es gibt keine Pflicht zu einem zusätzlichen Betatest, zu zwei Agenten, zu zwei Ansätzen oder zu einer bestimmten Toolkombination. Ein Framework-Vergleich ist optional. Sie dürfen mehrere bereits vorhandene agentische Ansätze zeigen und einen davon vertieft evaluieren.
+**Werkzeuge und Vorgehen:** Für die Agentenlogik wählt jedes Team ein Framework, LangChain/LangGraph oder Google ADK, und vertieft es. n8n ist mindestens mit einem kleinen Teil eingebunden, zum Beispiel mit einfachen Data-Prep-Schritten wie dem Einspielen der Car Policy. Der Agent selbst muss nicht in n8n laufen. Bestehende funktionsfähige Lösungen dürfen bleiben und weiterentwickelt werden, auch wenn sie einen größeren Teil in n8n umsetzen. Ein Framework-Vergleich ist optional. Sie dürfen mehrere bereits vorhandene agentische Ansätze zeigen und einen davon vertieft evaluieren.
 
-**Datenfluss:** Zeigen Sie nachvollziehbar, welche Daten zwischen den sinnvollen Teilschritten Ihrer Lösung übergeben werden und wie sie weiterverarbeitet werden. Eine Datenvorbereitung in n8n mit anschließender Übergabe ist ein mögliches Beispiel, keine Vorgabe. Auch eine Lösung innerhalb eines einzigen Werkzeugs kann dies erfüllen. Entscheidend sind die fachliche Qualität, die Evaluation und eine begründete, verständliche Umsetzung.
+**Datenfluss:** Zeigen Sie nachvollziehbar, welche Daten zwischen n8n und dem Agenten-Framework übergeben und wie sie weiterverarbeitet werden. Die Art der Übergabe ist frei, zum Beispiel über einen gemeinsamen Datenspeicher, in den n8n schreibt und aus dem der Agent liest. Entscheidend sind die fachliche Qualität, die Evaluation und eine begründete, verständliche Umsetzung.
 
 | Kriterium | Punkte |
 |---|---|
@@ -74,7 +74,7 @@ DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb j
 | Retrieval mit transparenter Quellenangabe | 8 |
 | Dialog mit Folgefragen, schrittweisen Vorschlägen und Rückfrage bei Unklarheit | 8 |
 | Car Policy 2.0 einspielen: nur der aktuelle Stand gilt, Änderungen sind intern nachvollziehbar | 6 |
-| Nachvollziehbare Datenübergabe und funktionierendes Zusammenspiel sinnvoller Teilschritte | 6 |
+| Nachvollziehbare Datenübergabe und funktionierendes Zusammenspiel von n8n und Agenten-Framework | 6 |
 | Code-Qualität, Struktur, Fehlerbehandlung | 6 |
 
 Die Punkte für den Prototyp ergeben sich aus dem Repository und aus dem Austausch mit den Teams während des Semesters, zum Beispiel wenn in den Feedbackterminen gemeinsam auf Code, Prompts oder SQL-Abfragen geschaut wird.
