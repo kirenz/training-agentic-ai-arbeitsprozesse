@@ -63,7 +63,7 @@ DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb j
 
 ### Prototyp: 50 Punkte
 
-**Werkzeuge und Vorgehen:** Jedes Team wählt eine zur Aufgabe passende Umsetzung und begründet seine Entscheidung. Eine vollständige Lösung in n8n ist ebenso möglich wie eine Umsetzung mit einem Agenten-Framework oder eine sinnvolle Kombination. Bestehende funktionsfähige Lösungen dürfen weiterentwickelt werden. Es gibt keine Pflicht zu einem zusätzlichen Betatest, zu zwei Agenten, zu zwei Ansätzen oder zu einer bestimmten Toolkombination. Ein Framework-Vergleich ist optional.
+**Werkzeuge und Vorgehen:** Jedes Team wählt eine zur Aufgabe passende Umsetzung und begründet seine Entscheidung. Eine vollständige Lösung in n8n ist ebenso möglich wie eine Umsetzung mit einem Agenten-Framework oder eine sinnvolle Kombination. Bestehende funktionsfähige Lösungen dürfen weiterentwickelt werden. Es gibt keine Pflicht zu einem zusätzlichen Betatest, zu zwei Agenten, zu zwei Ansätzen oder zu einer bestimmten Toolkombination. Ein Framework-Vergleich ist optional. Ihr dürft mehrere bereits vorhandene agentische Ansätze zeigen und einen davon vertieft evaluieren.
 
 **Datenfluss:** Zeigt nachvollziehbar, welche Daten zwischen den sinnvollen Teilschritten eurer Lösung übergeben werden und wie sie weiterverarbeitet werden. Eine Datenvorbereitung in n8n mit anschließender Übergabe ist ein mögliches Beispiel, keine Vorgabe. Auch eine Lösung innerhalb eines einzigen Werkzeugs kann dies erfüllen. Entscheidend sind die fachliche Qualität, die Evaluation und eine begründete, verständliche Umsetzung.
 
@@ -88,6 +88,8 @@ DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb j
 ::: {.callout-important}
 Ein Teil der Prüffälle wird erst nach der Abgabe bekannt gegeben und gegen den abgegebenen Stand ausgeführt.
 :::
+
+**Individuelles Verständnis agentischer KI:** Jede Person befasst sich inhaltlich mit agentischer KI und kann die zentralen Konzepte sowie den eigenen Beitrag verständlich erklären. Eine Mitarbeit ausschließlich an der Oberfläche oder an reiner Automation ohne Agentenbezug reicht nicht aus. Unterschiedliche Rollen sind möglich; entscheidend sind ein nachvollziehbarer eigener Beitrag und das Verständnis seines Zusammenhangs mit der agentischen Lösung.
 
 **Teamarbeit:** Alle tragen gleichwertig bei. Peer-Bewertung, Commits und Board-Aktivität fließen ein. Bei zu geringem Beitrag sinkt die Einzelnote um bis zu 0,7 gegenüber der Teamnote.
 
