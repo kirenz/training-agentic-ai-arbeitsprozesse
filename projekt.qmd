@@ -12,7 +12,7 @@ toc: true
 | Di, 27.10.2026, 12:00 Uhr | Review 1 mit Mercedes-Benz, online | Datenzugriff steht, erste Car-Policy-Regeln greifen, erste Prüffälle |
 | bis Di, 17.11.2026 | [Online-Kurse](#online-kurse), individuell | alle Pflichtkurse belegt, Nachweis abgelegt (n8n-Kurs QS101 bis Mo, 30.11.2026) |
 | Di, 01.12.2026, 11:45 Uhr, I010 | Zwischenpräsentation, 10 Minuten je Team | Prototyp, Prüffälle, offene Punkte, Plan bis Semesterende |
-| Di, 12.01.2027, 12:00 Uhr | Review 2 mit Mercedes-Benz, online | Generalprobe, Car Policy 2.0 eingespielt |
+| Di, 12.01.2027, 12:00 Uhr | Review 2 mit Mercedes-Benz, online | Generalprobe, Wechsel auf Car Policy 2.0 |
 | Di, 02.02.2027, Kundencenter Werk Sindelfingen | Abschlusspräsentation bei Mercedes-Benz, 10 Minuten je Team | Live-Demo |
 | Fr, 12.02.2027 | Abgabe Prototyp und Wiki | letzter Commit |
 
@@ -34,10 +34,10 @@ Alles außer den Online-Kursen entsteht im Team. Details unter [Bewertung](#bewe
 
 | | Kurs | Umfang | Wofür im Projekt |
 |---|---|---|---|
-| Pflicht | [n8n Quickstart (QS101)](https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about) | n8n Academy, englisch, ca. 3 bis 5 Std. | Workflow zum Einspielen der Car Policy 2.0 |
+| Pflicht | [n8n Quickstart (QS101)](https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about) | n8n Academy, englisch, ca. 3 bis 5 Std. | Workflow für den Wechsel auf Car Policy 2.0 |
 | Pflicht | [AI Agents in LangGraph](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/) | 1 h 42 min | Dialog-Agent mit LangGraph |
 | Pflicht | [Evaluating AI Agents](https://www.deeplearning.ai/short-courses/evaluating-ai-agents/) | 2 h 36 min | Evaluationsbericht |
-| Empfohlen | [Document AI: From OCR to Agentic Doc Extraction](https://www.deeplearning.ai/short-courses/document-ai-from-ocr-to-agentic-doc-extraction/) | ca. 3 h | Rohdaten-Weg: Tabellen aus PDFs |
+| Empfohlen | [Document AI: From OCR to Agentic Doc Extraction](https://www.deeplearning.ai/short-courses/document-ai-from-ocr-to-agentic-doc-extraction/) | ca. 3 h | Hintergrund: wie Tabellen aus PDFs extrahiert werden |
 
 Die Pflichtkurse vermitteln Grundlagen und Beispiele. Sie schreiben nicht vor, welche Werkzeuge Sie für Ihren Prototyp einsetzen müssen.
 
@@ -63,7 +63,7 @@ DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb j
 
 ### Prototyp: 50 Punkte
 
-**Werkzeuge und Vorgehen:** Für die Agentenlogik wählt jedes Team ein Framework, LangChain/LangGraph oder Google ADK, und vertieft es. n8n ist mindestens mit einem kleinen Teil eingebunden, zum Beispiel mit einfachen Data-Prep-Schritten wie dem Einspielen der Car Policy. Der Agent selbst muss nicht in n8n laufen. Bestehende funktionsfähige Lösungen dürfen bleiben und weiterentwickelt werden, auch wenn sie einen größeren Teil in n8n umsetzen. Ein Framework-Vergleich ist optional. Sie dürfen mehrere bereits vorhandene agentische Ansätze zeigen und einen davon vertieft evaluieren.
+**Werkzeuge und Vorgehen:** Für die Agentenlogik wählt jedes Team ein Framework, LangChain/LangGraph oder Google ADK, und vertieft es. n8n ist mindestens mit einem kleinen Teil eingebunden, zum Beispiel mit einfachen Data-Prep-Schritten wie dem Lesen und Aufbereiten der Car Policy über die Datenbankverbindung. Der Agent selbst muss nicht in n8n laufen. Bestehende funktionsfähige Lösungen dürfen bleiben und weiterentwickelt werden, auch wenn sie einen größeren Teil in n8n umsetzen. Ein Framework-Vergleich ist optional. Sie dürfen mehrere bereits vorhandene agentische Ansätze zeigen und einen davon vertieft evaluieren.
 
 **Datenfluss:** Zeigen Sie nachvollziehbar, welche Daten zwischen n8n und dem Agenten-Framework übergeben und wie sie weiterverarbeitet werden. Die Art der Übergabe ist frei, zum Beispiel über einen gemeinsamen Datenspeicher, in den n8n schreibt und aus dem der Agent liest. Entscheidend sind die fachliche Qualität, die Evaluation und eine begründete, verständliche Umsetzung.
 
@@ -73,7 +73,7 @@ DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb j
 | Car Policy abgebildet (Pflicht, Verbot, Kombinationspflichten, Lack und Polster) und mit den Abhängigkeiten der Preisliste verknüpft | 8 |
 | Retrieval mit transparenter Quellenangabe | 8 |
 | Dialog mit Folgefragen, schrittweisen Vorschlägen und Rückfrage bei Unklarheit | 8 |
-| Car Policy 2.0 einspielen: nur der aktuelle Stand gilt, Änderungen sind intern nachvollziehbar | 6 |
+| Versionswechsel der Car Policy (n8n-Workflow): Umschalten von 1.0 auf 2.0, danach gilt nur der aktuelle Stand, Änderungen sind nachvollziehbar | 6 |
 | Nachvollziehbare Datenübergabe und funktionierendes Zusammenspiel von n8n und Agenten-Framework | 6 |
 | Code-Qualität, Struktur, Fehlerbehandlung | 6 |
 
@@ -123,7 +123,6 @@ Ab sofort in `04_Evaluation` sammeln, ein Fall pro Zeile:
 ## Daten und Rückfragen {#daten}
 
 - **Preislisten-Datenbank:** Jedes Team erhält einen eigenen Zugang per E-Mail. Zugangsdaten gehören in die `.env`.
-- **Bis dahin:** mit dem Rohdaten-Weg an einem Ausschnitt beginnen. Der Vergleich gehört ohnehin zur Bewertung.
 - **Rückfragen an Mercedes-Benz:** im Team sammeln und zum Dienstagstermin vor einem Review mitbringen. Keine Einzelanfragen an Mercedes-Benz.
 
 ## Team-Repository {#team}
