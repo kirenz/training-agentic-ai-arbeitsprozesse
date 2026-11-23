@@ -69,7 +69,7 @@ DeepLearning.AI bietet die Kurse nur für begrenzte Zeit kostenlos an. Deshalb j
 
 | Kriterium | Punkte |
 |---|---|
-| Datenzugriff: Preislisten-Datenbank über die Datenbankverbindung angebunden, Abfragen liefern die richtigen Daten mit Fundstelle | 8 |
+| Datenzugriff: einfache, sinnvolle Anbindung der im Kurs bereitgestellten Daten | 8 |
 | Car Policy abgebildet (Pflicht, Verbot, Kombinationspflichten, Lack und Polster) und mit den Abhängigkeiten der Preisliste verknüpft | 8 |
 | Retrieval mit transparenter Quellenangabe | 8 |
 | Dialog mit Folgefragen, schrittweisen Vorschlägen und Rückfrage bei Unklarheit | 8 |
