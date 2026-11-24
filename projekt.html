@@ -301,7 +301,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>Di, 12.01.2027, 12:00 Uhr</td>
 <td>Review 2 mit Mercedes-Benz, online</td>
-<td>Generalprobe, Car Policy 2.0 eingespielt</td>
+<td>Generalprobe, Wechsel auf Car Policy 2.0</td>
 </tr>
 <tr class="odd">
 <td>Di, 02.02.2027, Kundencenter Werk Sindelfingen</td>
@@ -367,7 +367,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Pflicht</td>
 <td><a href="https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about">n8n Quickstart (QS101)</a></td>
 <td>n8n Academy, englisch, ca. 3 bis 5 Std.</td>
-<td>Workflow zum Einspielen der Car Policy 2.0</td>
+<td>Workflow für den Wechsel auf Car Policy 2.0</td>
 </tr>
 <tr class="even">
 <td>Pflicht</td>
@@ -385,7 +385,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Empfohlen</td>
 <td><a href="https://www.deeplearning.ai/short-courses/document-ai-from-ocr-to-agentic-doc-extraction/">Document AI: From OCR to Agentic Doc Extraction</a></td>
 <td>ca. 3 h</td>
-<td>Rohdaten-Weg: Tabellen aus PDFs</td>
+<td>Hintergrund: wie Tabellen aus PDFs extrahiert werden</td>
 </tr>
 </tbody>
 </table>
@@ -417,7 +417,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="bewertung">Bewertung</h2>
 <section id="prototyp-50-punkte" class="level3">
 <h3 class="anchored" data-anchor-id="prototyp-50-punkte">Prototyp: 50 Punkte</h3>
-<p><strong>Werkzeuge und Vorgehen:</strong> Für die Agentenlogik wählt jedes Team ein Framework, LangChain/LangGraph oder Google ADK, und vertieft es. n8n ist mindestens mit einem kleinen Teil eingebunden, zum Beispiel mit einfachen Data-Prep-Schritten wie dem Einspielen der Car Policy. Der Agent selbst muss nicht in n8n laufen. Bestehende funktionsfähige Lösungen dürfen bleiben und weiterentwickelt werden, auch wenn sie einen größeren Teil in n8n umsetzen. Ein Framework-Vergleich ist optional. Sie dürfen mehrere bereits vorhandene agentische Ansätze zeigen und einen davon vertieft evaluieren.</p>
+<p><strong>Werkzeuge und Vorgehen:</strong> Für die Agentenlogik wählt jedes Team ein Framework, LangChain/LangGraph oder Google ADK, und vertieft es. n8n ist mindestens mit einem kleinen Teil eingebunden, zum Beispiel mit einfachen Data-Prep-Schritten wie dem Lesen und Aufbereiten der Car Policy über die Datenbankverbindung. Der Agent selbst muss nicht in n8n laufen. Bestehende funktionsfähige Lösungen dürfen bleiben und weiterentwickelt werden, auch wenn sie einen größeren Teil in n8n umsetzen. Ein Framework-Vergleich ist optional. Sie dürfen mehrere bereits vorhandene agentische Ansätze zeigen und einen davon vertieft evaluieren.</p>
 <p><strong>Datenfluss:</strong> Zeigen Sie nachvollziehbar, welche Daten zwischen n8n und dem Agenten-Framework übergeben und wie sie weiterverarbeitet werden. Die Art der Übergabe ist frei, zum Beispiel über einen gemeinsamen Datenspeicher, in den n8n schreibt und aus dem der Agent liest. Entscheidend sind die fachliche Qualität, die Evaluation und eine begründete, verständliche Umsetzung.</p>
 <table class="caption-top table">
 <colgroup>
@@ -432,7 +432,7 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Datenzugriff: Preislisten-Datenbank angebunden, an einem Ausschnitt mit der Extraktion aus dem Original-PDF verglichen</td>
+<td>Datenzugriff: einfache, sinnvolle Anbindung der im Kurs bereitgestellten Daten</td>
 <td>8</td>
 </tr>
 <tr class="even">
@@ -448,7 +448,7 @@ ul.task-list li input[type="checkbox"] {
 <td>8</td>
 </tr>
 <tr class="odd">
-<td>Car Policy 2.0 einspielen: nur der aktuelle Stand gilt, Änderungen sind intern nachvollziehbar</td>
+<td>Versionswechsel der Car Policy (n8n-Workflow): Umschalten von 1.0 auf 2.0, danach gilt nur der aktuelle Stand, Änderungen sind nachvollziehbar</td>
 <td>6</td>
 </tr>
 <tr class="even">
@@ -564,7 +564,6 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="daten">Daten und Rückfragen</h2>
 <ul>
 <li><strong>Preislisten-Datenbank:</strong> Jedes Team erhält einen eigenen Zugang per E-Mail. Zugangsdaten gehören in die <code>.env</code>.</li>
-<li><strong>Bis dahin:</strong> mit dem Rohdaten-Weg an einem Ausschnitt beginnen. Der Vergleich gehört ohnehin zur Bewertung.</li>
 <li><strong>Rückfragen an Mercedes-Benz:</strong> im Team sammeln und zum Dienstagstermin vor einem Review mitbringen. Keine Einzelanfragen an Mercedes-Benz.</li>
 </ul>
 </section>
